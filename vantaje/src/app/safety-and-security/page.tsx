@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 export default function SafetyAndSecurityPage() {
   return (
     <>
-      <Header active="safety" locationHref="/#hp-location" ctaHref="#s-cta" />
+      <Header active="safety" />
       <div
         id="p-safety"
         className="relative bg-[rgb(11,10,9)] text-[rgb(240,234,221)]"

@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 export default function OverviewPage() {
   return (
     <>
-      <Header active="overview" locationHref="/#hp-location" ctaHref="#v-cta" />
+      <Header active="overview" />
       <div
         id="p-overview"
         className="relative bg-[rgb(11,10,9)] text-[rgb(240,234,221)]"

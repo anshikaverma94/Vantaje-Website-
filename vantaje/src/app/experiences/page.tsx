@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 export default function ExperiencesPage() {
   return (
     <>
-      <Header active="experiences" locationHref="/#hp-location" ctaHref="#x-cta" />
+      <Header active="experiences" />
       <div
         id="p-experiences"
         className="relative bg-[rgb(11,10,9)] text-[rgb(240,234,221)]"

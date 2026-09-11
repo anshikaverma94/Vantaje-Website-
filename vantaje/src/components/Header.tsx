@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-type NavKey = "home" | "overview" | "experiences" | "safety";
+type NavKey = "home" | "overview" | "experiences" | "safety" | "location" | "contact";
 
 const BASE_LINKS: { key: NavKey; href: string; label: string }[] = [
   { key: "home", href: "/", label: "Homepage" },
@@ -9,15 +9,7 @@ const BASE_LINKS: { key: NavKey; href: string; label: string }[] = [
   { key: "experiences", href: "/experiences", label: "Experiences" },
 ];
 
-export default function Header({
-  active = "home",
-  locationHref = "#hp-location",
-  ctaHref = "#hp-cta",
-}: {
-  active?: NavKey;
-  locationHref?: string;
-  ctaHref?: string;
-}) {
+export default function Header({ active = "home" }: { active?: NavKey }) {
   return (
     <header className="fixed inset-x-0 top-0 z-[60] flex justify-center p-[clamp(10px,1.6vw,20px)]">
       <div className="flex w-full max-w-[1320px] items-center gap-[clamp(10px,2vw,26px)] rounded-full border border-[rgba(240,234,221,0.1)] bg-[rgba(16,14,12,0.62)] py-4 pl-[clamp(24px,3vw,40px)] pr-[clamp(24px,3vw,40px)] backdrop-blur-xl">
@@ -57,14 +49,22 @@ export default function Header({
             Safety and Security
           </a>
           <a
-            href={locationHref}
-            className="whitespace-nowrap text-[rgba(240,234,221,0.62)] transition-colors hover:text-[rgb(240,234,221)]"
+            href="/location"
+            className={`whitespace-nowrap transition-colors ${
+              active === "location"
+                ? "text-[rgb(240,234,221)]"
+                : "text-[rgba(240,234,221,0.62)] hover:text-[rgb(240,234,221)]"
+            }`}
           >
             Location
           </a>
           <a
-            href={ctaHref}
-            className="whitespace-nowrap text-[rgba(240,234,221,0.62)] transition-colors hover:text-[rgb(240,234,221)]"
+            href="/contact"
+            className={`whitespace-nowrap transition-colors ${
+              active === "contact"
+                ? "text-[rgb(240,234,221)]"
+                : "text-[rgba(240,234,221,0.62)] hover:text-[rgb(240,234,221)]"
+            }`}
           >
             Contact
           </a>
