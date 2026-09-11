@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+:root {
+  --cream: #f7f4ed;
+  --cream-2: #ebe5d9;
+  --dark: #16100c;
+  --dark-2: #120d09;
+  --gold: #e8c68a;
+  --brown: #4a3328;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--cream);
+  color: var(--dark);
+  font-family: var(--font-eb-garamond), Georgia, serif;
+  overflow-x: hidden;
+}
+
+.font-display {
+  font-family: var(--font-cormorant), serif;
+}
+
+.font-jost {
+  font-family: var(--font-jost), sans-serif;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(28px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes ruleGrow {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+
+.animate-fadeUp {
+  animation: fadeUp 1s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.animate-ruleGrow {
+  animation: ruleGrow 1.2s cubic-bezier(0.16, 1, 0.3, 1) 0.5s both;
+}
+
+.marquee-track {
+  animation: marquee 42s linear infinite;
+}
+
+@keyframes marquee {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
