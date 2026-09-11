@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
+import { smoothScrollTo } from "@/components/SmoothScroll";
 
 const FLOORS = [
   {
@@ -151,7 +152,7 @@ export default function FloorsDeck() {
     const vh = window.innerHeight || 800;
     const span = wrap.offsetHeight - vh || 1;
     const i = Math.max(0, Math.min(N - 1, active + delta));
-    window.scrollTo({ top: wrap.offsetTop + (span * i) / (N - 1) + 2, behavior: "smooth" });
+    smoothScrollTo(wrap.offsetTop + (span * i) / (N - 1) + 2, { duration: 1 });
   };
 
   return (

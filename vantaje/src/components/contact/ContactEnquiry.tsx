@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { smoothScrollTo } from "@/components/SmoothScroll";
 
 const INTENTS = [
   { number: "01", label: "Investment Opportunity" },
@@ -17,10 +18,7 @@ export default function ContactEnquiry() {
   const selectIntent = (label: string) => {
     setIntent(label);
     const form = document.getElementById("c-form");
-    if (form) {
-      const top = form.getBoundingClientRect().top + window.scrollY - 90;
-      window.scrollTo({ top, behavior: "smooth" });
-    }
+    if (form) smoothScrollTo(form, { offset: -90 });
   };
 
   const handleSubmit = (e: React.FormEvent) => {
