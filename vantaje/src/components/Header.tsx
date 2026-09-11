@@ -6,7 +6,7 @@ type NavKey = "home" | "overview" | "experiences" | "safety";
 const BASE_LINKS: { key: NavKey; href: string; label: string }[] = [
   { key: "home", href: "/", label: "Homepage" },
   { key: "overview", href: "/overview", label: "Overview" },
-  { key: "experiences", href: "#", label: "Experiences" },
+  { key: "experiences", href: "/experiences", label: "Experiences" },
 ];
 
 export default function Header({

@@ -1,0 +1,1090 @@
+<!DOCTYPE html>
+<html><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="40a16b7b-64ae-408a-b0bc-6eb35718e766"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<style>/* cyrillic-ext */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("24b96484-cce8-49eb-b2b4-c745bfeb60d9") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("e4d16f88-7144-4df8-8243-57a612c7bb35") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("465979de-d0f0-4010-b8c4-4d0b4fa70271") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("762e5e3a-1cf3-4575-a1ad-7ae51c61f083") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("13a58f23-5274-4a83-ac08-dd7be9c9481d") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("08d6589a-76f5-4b57-b30e-6ecd4abee6a2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("b726ca53-f7e1-4584-bdea-d58cf91d2606") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("7033b1a6-670d-46a5-bf5a-07ac90055dac") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("973bdec2-a67f-4c17-b7eb-dd35e00e16cb") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("60184a20-8b05-4385-ac35-ab6fc376640c") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("08d6589a-76f5-4b57-b30e-6ecd4abee6a2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("b726ca53-f7e1-4584-bdea-d58cf91d2606") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("7033b1a6-670d-46a5-bf5a-07ac90055dac") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("973bdec2-a67f-4c17-b7eb-dd35e00e16cb") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("60184a20-8b05-4385-ac35-ab6fc376640c") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'EB Garamond';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("bf4cebba-277b-4ec0-83d6-75eb15a3ea1d") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'EB Garamond';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("b5c139bc-9394-4bf1-bcf6-5dbd7e921b04") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'EB Garamond';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("100f4a32-3abf-439a-8808-11d5646c1a07") format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'EB Garamond';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("9a7b976d-cf7d-4f0d-bf9c-93a8e093e1ed") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'EB Garamond';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("69a77123-9a06-415e-b83a-2f4b88f97ef0") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'EB Garamond';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("0e42a1fe-7b1e-4f25-801c-291650fb8244") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'EB Garamond';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("76b8ee9d-e51b-4402-bcc1-a14839e7d662") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'EB Garamond';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("bf4cebba-277b-4ec0-83d6-75eb15a3ea1d") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'EB Garamond';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("b5c139bc-9394-4bf1-bcf6-5dbd7e921b04") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'EB Garamond';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("100f4a32-3abf-439a-8808-11d5646c1a07") format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'EB Garamond';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("9a7b976d-cf7d-4f0d-bf9c-93a8e093e1ed") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'EB Garamond';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("69a77123-9a06-415e-b83a-2f4b88f97ef0") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'EB Garamond';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("0e42a1fe-7b1e-4f25-801c-291650fb8244") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'EB Garamond';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("76b8ee9d-e51b-4402-bcc1-a14839e7d662") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Jost';
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: url("333d37fc-4e59-405a-a922-5251441eb254") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Jost';
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: url("bbab9ca1-caac-4aeb-a797-297a07346d51") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Jost';
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: url("72c22702-ca7e-4177-b0ed-abbb60cd7eae") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Jost';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("333d37fc-4e59-405a-a922-5251441eb254") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Jost';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("bbab9ca1-caac-4aeb-a797-297a07346d51") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Jost';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("72c22702-ca7e-4177-b0ed-abbb60cd7eae") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Jost';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("333d37fc-4e59-405a-a922-5251441eb254") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Jost';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("bbab9ca1-caac-4aeb-a797-297a07346d51") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Jost';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("72c22702-ca7e-4177-b0ed-abbb60cd7eae") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Jost';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("333d37fc-4e59-405a-a922-5251441eb254") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Jost';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("bbab9ca1-caac-4aeb-a797-297a07346d51") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Jost';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("72c22702-ca7e-4177-b0ed-abbb60cd7eae") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+</style>
+<style>
+  html { background:#0B0A09; }
+  body { margin:0; background:#0B0A09; -webkit-font-smoothing:antialiased; text-wrap:pretty; overflow-x:clip; }
+  a { color:#F0EADD; text-decoration:none; }
+  a:hover { color:#E8C68A; }
+  ::selection { background:#E8C68A; color:#0B0A09; }
+  ::-webkit-scrollbar { width:8px; }
+  ::-webkit-scrollbar-track { background:#0B0A09; }
+  ::-webkit-scrollbar-thumb { background:#3A322A; }
+  @keyframes vFade { from { opacity:0; } to { opacity:1; } }
+  @keyframes vUp { from { opacity:0; transform:translateY(26px); } to { opacity:1; transform:none; } }
+  @keyframes vMarquee { from { transform:translate3d(0,0,0); } to { transform:translate3d(-50%,0,0); } }
+  @keyframes vPulse { 0%,100% { opacity:.35; transform:scale(1); } 50% { opacity:1; transform:scale(1.25); } }
+</style>
+</helmet>
+
+
+<div style="position:relative;background:#0B0A09;color:#F0EADD;font-family:'Jost',system-ui,sans-serif;overflow-x:clip">
+
+  <div data-progress="" style="position:fixed;left:0;top:0;z-index:80;height:2px;width:0%;background:#E8C68A"></div>
+
+  <header style="position:fixed;left:0;right:0;top:0;z-index:60;display:flex;justify-content:center;padding:clamp(10px,1.6vw,20px)">
+    <div data-nav-pill="" style="display:flex;align-items:center;gap:clamp(10px,2vw,26px);width:min(1320px,100%);padding:10px 10px 10px clamp(16px,2vw,26px);border:1px solid rgba(240,234,221,.1);border-radius:100px;background:rgba(16,14,12,.62);backdrop-filter:blur(16px);transition:background .5s ease,border-color .5s ease">
+      <a href="Vantaje Homepage.dc.html" style="display:flex;align-items:center;flex:0 0 auto" style-hover="opacity:.78"><img src="36a619fc-023f-4558-9892-2ec7d28bdf75" alt="Vantaje" style="display:block;height:clamp(17px,1.7vw,23px);width:auto"></a>
+      <nav style="display:flex;align-items:center;gap:clamp(8px,1.4vw,20px);margin-left:auto;font-weight:400;font-size:11.5px;letter-spacing:.18em;text-transform:uppercase;overflow:hidden">
+        <a href="Vantaje Homepage.dc.html" style="color:rgba(240,234,221,.62);white-space:nowrap" style-hover="color:#F0EADD">Homepage</a>
+        <a href="Vantaje Project Overview v2.dc.html" style="color:rgba(240,234,221,.62);white-space:nowrap" style-hover="color:#F0EADD">Overview</a>
+        <a href="Vantaje Experiences v2.dc.html" style="color:#F0EADD;white-space:nowrap" style-hover="color:#F0EADD">Experiences</a>
+        <a href="Vantaje Safety and Security.dc.html" style="color:rgba(240,234,221,.62);white-space:nowrap" style-hover="color:#F0EADD">Safety and Security</a>
+        <a href="Vantaje Homepage.dc.html#hp-location" style="color:rgba(240,234,221,.62);white-space:nowrap" style-hover="color:#F0EADD">Location</a>
+        <a href="Vantaje Project Overview v2.dc.html#v-cta" style="color:rgba(240,234,221,.62);white-space:nowrap" style-hover="color:#F0EADD">Contact</a>
+      </nav>
+      <a href="#x-cta" data-accent-bg="" style="display:flex;align-items:center;gap:8px;padding:11px clamp(14px,1.6vw,22px);border-radius:100px;background:#E8C68A;color:#17120C;font-weight:500;font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;white-space:nowrap" style-hover="background:#F4DCAE">Enquire</a>
+    </div>
+  </header>
+
+  <div data-strip="" style="position:fixed;left:0;right:0;bottom:0;z-index:65;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px clamp(14px,2.4vw,34px);font-size:9.5px;letter-spacing:.28em;text-transform:uppercase;color:rgba(240,234,221,.4);pointer-events:none;background:linear-gradient(180deg,rgba(11,10,9,0) 0%,rgba(11,10,9,.75) 100%)">
+    <span>(Vantaje Experiences)</span>
+    <span>Sector 48 · Sohna Road</span>
+  </div>
+
+  <section data-intro-wrap="" data-screen-label="01 Title Reveal" style="position:relative;height:340vh">
+    <div style="position:sticky;top:0;height:100svh;overflow:hidden;background:#0B0A09">
+
+      <div data-plate="" style="position:absolute;left:50%;top:50%;width:340px;height:170px;transform:translate(-50%,-50%);overflow:hidden;background:#131110">
+        <img src="2f589fab-ecac-45e8-ae60-2b37287ed556" alt="Vantaje at dusk" style="width:100%;height:100%;object-fit:cover;object-position:50% 48%">
+        <div data-plate-scrim="" style="position:absolute;inset:0;opacity:0;background:linear-gradient(180deg,rgba(11,10,9,.44) 0%,rgba(11,10,9,.08) 38%,rgba(11,10,9,.9) 100%)"></div>
+      </div>
+
+      <div data-annos="" style="position:absolute;inset:0;opacity:0;pointer-events:none;transition:opacity .7s ease">
+        <div style="position:absolute;left:8%;top:34%;display:flex;align-items:center;gap:10px">
+          <span style="position:relative;display:block;width:9px;height:9px;border:1px solid #E8C68A;border-radius:50%;animation:vPulse 2.6s ease-in-out infinite"></span>
+          <span style="font-size:10px;letter-spacing:.26em;text-transform:uppercase;color:#F0EADD;text-shadow:0 2px 14px rgba(8,6,5,.9)">High street retail</span>
+        </div>
+        <div style="position:absolute;left:22%;top:57%;display:flex;align-items:center;gap:10px">
+          <span style="display:block;width:9px;height:9px;border:1px solid #E8C68A;border-radius:50%;animation:vPulse 2.6s ease-in-out .7s infinite"></span>
+          <span style="font-size:10px;letter-spacing:.26em;text-transform:uppercase;color:#F0EADD;text-shadow:0 2px 14px rgba(8,6,5,.9)">Culinary &amp; leisure</span>
+        </div>
+        <div style="position:absolute;right:34%;top:26%;display:flex;align-items:center;gap:10px">
+          <span style="font-size:10px;letter-spacing:.26em;text-transform:uppercase;color:#F0EADD;text-shadow:0 2px 14px rgba(8,6,5,.9)">Modern workspaces</span>
+          <span style="display:block;width:9px;height:9px;border:1px solid #E8C68A;border-radius:50%;animation:vPulse 2.6s ease-in-out 1.4s infinite"></span>
+        </div>
+
+        <div style="position:absolute;right:clamp(16px,3vw,44px);top:50%;transform:translateY(-50%);width:min(300px,42vw);padding:20px;border:1px solid rgba(240,234,221,.14);border-radius:18px;background:rgba(16,14,12,.52);backdrop-filter:blur(18px)">
+          <div style="display:flex;align-items:baseline;gap:10px">
+            <span style="font-family:'Cormorant Garamond',serif;font-weight:300;font-size:46px;line-height:1;color:#E8C68A">07</span>
+            <span style="font-size:10px;letter-spacing:.26em;text-transform:uppercase;color:rgba(240,234,221,.6)">Experiences<br>one address</span>
+          </div>
+          <div style="height:1px;margin:16px 0;background:rgba(240,234,221,.12)"></div>
+          <p style="margin:0;font-family:'EB Garamond',serif;font-size:14.5px;line-height:1.6;color:rgba(240,234,221,.76)">From everyday convenience to elevated leisure, Vantaje brings together experiences designed to attract, engage and bring people back.</p>
+          <a href="#x-chapters" style="display:inline-block;margin-top:18px;padding:12px 20px;border-radius:100px;background:#E8C68A;color:#17120C;font-weight:500;font-size:10.5px;letter-spacing:.18em;text-transform:uppercase" style-hover="background:#F4DCAE">Explore the Experiences</a>
+        </div>
+      </div>
+
+      <div data-title-row="" style="position:absolute;left:0;right:0;top:50%;z-index:4;display:flex;align-items:center;justify-content:center;padding:0 clamp(14px,3vw,40px);transform:translateY(-50%);pointer-events:none;animation:vFade 1.2s ease both">
+        <span data-bracket="" style="align-self:stretch;width:clamp(14px,1.6vw,26px);border-left:1px solid rgba(240,234,221,.55);border-top:1px solid rgba(240,234,221,.55);border-bottom:1px solid rgba(240,234,221,.55);min-height:clamp(64px,9vw,132px)"></span>
+        <span data-title-a="" style="padding-left:clamp(10px,1.4vw,22px);font-weight:200;font-size:clamp(24px,4.8vw,84px);line-height:1;letter-spacing:.01em;text-transform:uppercase;color:#FBF7EF;white-space:nowrap;text-shadow:0 2px 30px rgba(8,6,5,.7)">The Vantaje</span>
+        <span data-gap="" style="display:block;width:340px;flex:0 0 auto"></span>
+        <span data-title-b="" style="padding-right:clamp(10px,1.4vw,22px);font-weight:200;font-size:clamp(24px,4.8vw,84px);line-height:1;letter-spacing:.01em;text-transform:uppercase;color:#FBF7EF;white-space:nowrap;text-shadow:0 2px 30px rgba(8,6,5,.7)">Experiences</span>
+        <span data-bracket="" style="align-self:stretch;width:clamp(14px,1.6vw,26px);border-right:1px solid rgba(240,234,221,.55);border-top:1px solid rgba(240,234,221,.55);border-bottom:1px solid rgba(240,234,221,.55);min-height:clamp(64px,9vw,132px)"></span>
+      </div>
+
+      <div data-cue="" style="position:absolute;left:50%;bottom:clamp(46px,7vh,72px);z-index:5;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:10px;font-size:9.5px;letter-spacing:.3em;text-transform:uppercase;color:rgba(240,234,221,.5);transition:opacity .5s ease">
+        <span>Scroll</span>
+        <span style="display:block;width:1px;height:38px;background:linear-gradient(180deg,rgba(232,198,138,.8),rgba(232,198,138,0))"></span>
+      </div>
+    </div>
+  </section>
+
+  <section id="x-chapters" data-chap-wrap="" data-screen-label="02 Experience Cards" style="position:relative;height:800svh;background:#EFE8DB">
+    <div style="position:sticky;top:0;height:100svh;overflow:hidden;box-sizing:border-box;display:flex;flex-direction:column;gap:clamp(10px,1.6vh,20px);padding:clamp(46px,7vh,88px) clamp(14px,2.4vw,40px) clamp(24px,4vh,50px)">
+
+      <div style="position:relative;z-index:4;display:flex;flex-wrap:wrap;align-items:end;justify-content:space-between;gap:14px">
+        <div style="display:flex;align-items:center;gap:14px;font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:#7A5620">
+          <span>What we build</span>
+          <span aria-hidden="true" style="width:26px;height:1px;background:rgba(140,101,40,.45)"></span>
+          <span data-count="" style="color:rgba(34,27,21,.78)">01 / 07</span>
+        </div>
+        <span style="font-size:10px;letter-spacing:.28em;text-transform:uppercase;color:rgba(34,27,21,.72)">Scroll to stack the floors</span>
+      </div>
+
+      <div data-deck-stage="" style="position:relative;flex:1 1 auto;min-height:0;overflow:hidden;z-index:1;perspective:1900px;perspective-origin:50% 30%">
+        <div data-deck="" style="position:absolute;inset:0;transform-style:flat">
+        <article data-card="0" style="position:absolute;left:50%;top:50%;width:min(1180px,94%);height:min(74svh,560px);box-sizing:border-box;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.02fr);gap:clamp(18px,3vw,52px);padding:clamp(22px,2.6vw,44px);border-radius:clamp(14px,1.4vw,22px);background:#0D0B0A;border:1px solid rgba(240,234,221,.1);box-shadow:0 -6px 34px rgba(28,20,14,.2),0 46px 90px rgba(28,20,14,.4);transform:perspective(1500px) translate(-50%,-50%);transform-origin:50% 0%;backface-visibility:hidden;will-change:transform,opacity">
+          <div style="display:flex;flex-direction:column;justify-content:space-between;gap:clamp(14px,2vh,26px);min-width:0">
+            <div style="display:flex;flex-direction:column;gap:clamp(12px,1.8vh,20px)">
+              <div style="display:flex;align-items:center;justify-content:space-between;gap:12px;font-size:10.5px;letter-spacing:.28em;text-transform:uppercase;color:#FFFAF2">
+                <span>High Street Retail</span>
+                <span>(01)</span>
+              </div>
+              <h2 style="margin:0;max-width:22ch;font-weight:400;font-size:clamp(25px,2.9vw,44px);line-height:1.06;letter-spacing:-.02em;color:#FFFAF2">Designed for visibility.<br><span style="font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:400;font-size:1.06em">Built for engagement.</span></h2>
+              <p style="margin:0;max-width:44ch;font-family:'EB Garamond',serif;font-size:clamp(14.5px,1.05vw,17px);line-height:1.65;color:#FFFAF2">Double-height, highly visible storefronts crafted for maximum brand exposure, effortless consumer movement and high-impact interaction.</p>
+            </div>
+            <div style="display:flex;flex-wrap:wrap;align-items:center;gap:clamp(10px,1.4vw,18px)">
+              <a href="#x-cta" style="display:inline-flex;align-items:center;gap:10px;padding:13px 20px;border-radius:100px;background:#E8C68A;color:#17120C;font-size:10.5px;letter-spacing:.2em;text-transform:uppercase" style-hover="background:#F4DCAE;color:#17120C">Explore this floor
+                <svg width="15" height="10" sc-camel-view-box="0 0 15 10" fill="none" aria-hidden="true"><path d="M9.4 1 14 5l-4.6 4M14 5H0" stroke="currentColor" stroke-width="1.2" stroke-linecap="square"></path></svg>
+              </a>
+              <div style="display:flex;flex-wrap:wrap;gap:12px;font-size:9.5px;letter-spacing:.22em;text-transform:uppercase;color:#FFFAF2"><span>Double-height frontage</span><span>Street-level access</span></div>
+            </div>
+          </div>
+          <div style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(8px,.9vw,14px);align-items:stretch;min-width:0">
+            <div style="position:relative;overflow:hidden;border-radius:8px;background:rgba(255,250,242,.12);">
+              <img src="bdad6ae7-f9bf-4313-b4ba-95064916dcf9" alt="High Street Retail" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover">
+            </div>
+            <div style="position:relative;overflow:hidden;border-radius:8px;background:rgba(255,250,242,.12);margin-top:clamp(14px,2.4vh,30px);">
+              <img src="4aac36ac-bad5-4085-9ef1-299b4610a9ad" alt="High Street Retail" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover">
+            </div>
+            <div style="position:relative;overflow:hidden;border-radius:8px;background:rgba(255,250,242,.12);margin-top:clamp(28px,4.8vh,60px);">
+              <img src="d716fd2c-6e1e-45ef-b793-c256cc1eea4e" alt="High Street Retail" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover">
+            </div>
+          </div>
+        </article>
+        <article data-card="1" style="position:absolute;left:50%;top:50%;width:min(1180px,94%);height:min(74svh,560px);box-sizing:border-box;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.02fr);gap:clamp(18px,3vw,52px);padding:clamp(22px,2.6vw,44px);border-radius:clamp(14px,1.4vw,22px);background:#131010;border:1px solid rgba(240,234,221,.1);box-shadow:0 -6px 34px rgba(28,20,14,.2),0 46px 90px rgba(28,20,14,.4);transform:perspective(1500px) translate(-50%,-50%);transform-origin:50% 0%;backface-visibility:hidden;will-change:transform,opacity">
+          <div style="display:flex;flex-direction:column;justify-content:space-between;gap:clamp(14px,2vh,26px);min-width:0">
+            <div style="display:flex;flex-direction:column;gap:clamp(12px,1.8vh,20px)">
+              <div style="display:flex;align-items:center;justify-content:space-between;gap:12px;font-size:10.5px;letter-spacing:.28em;text-transform:uppercase;color:#FFFAF2">
+                <span>Retail, Fashion &amp; Lifestyle</span>
+                <span>(02)</span>
+              </div>
+              <h2 style="margin:0;max-width:22ch;font-weight:400;font-size:clamp(25px,2.9vw,44px);line-height:1.06;letter-spacing:-.02em;color:#FFFAF2">Curated for<br><span style="font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:400;font-size:1.06em">aspirational experiences.</span></h2>
+              <p style="margin:0;max-width:44ch;font-family:'EB Garamond',serif;font-size:clamp(14.5px,1.05vw,17px);line-height:1.65;color:#FFFAF2">Premium spaces created for boutique fashion, lifestyle brands and flagship retail experiences.</p>
+            </div>
+            <div style="display:flex;flex-wrap:wrap;align-items:center;gap:clamp(10px,1.4vw,18px)">
+              <a href="#x-cta" style="display:inline-flex;align-items:center;gap:10px;padding:13px 20px;border-radius:100px;background:#E8C68A;color:#17120C;font-size:10.5px;letter-spacing:.2em;text-transform:uppercase" style-hover="background:#F4DCAE;color:#17120C">Explore this floor
+                <svg width="15" height="10" sc-camel-view-box="0 0 15 10" fill="none" aria-hidden="true"><path d="M9.4 1 14 5l-4.6 4M14 5H0" stroke="currentColor" stroke-width="1.2" stroke-linecap="square"></path></svg>
+              </a>
+              <div style="display:flex;flex-wrap:wrap;gap:12px;font-size:9.5px;letter-spacing:.22em;text-transform:uppercase;color:#FFFAF2"><span>Boutique fashion</span><span>Flagship formats</span></div>
+            </div>
+          </div>
+          <div style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(8px,.9vw,14px);align-items:stretch;min-width:0">
+            <div style="position:relative;overflow:hidden;border-radius:8px;background:rgba(255,250,242,.12);">
+              <img src="dd261440-11cf-4088-b69f-9bbac41306a8" alt="Retail, Fashion and Lifestyle" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover">
+            </div>
+            <div style="position:relative;overflow:hidden;border-radius:8px;background:rgba(255,250,242,.12);margin-top:clamp(14px,2.4vh,30px);">
+              <img src="4d947c21-1dd1-4281-ab08-45172821df9f" alt="Retail, Fashion and Lifestyle" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover">
+            </div>
+            <div style="position:relative;overflow:hidden;border-radius:8px;background:rgba(255,250,242,.12);margin-top:clamp(28px,4.8vh,60px);">
+              <img src="8736ab4d-aceb-436e-bd3d-e8d047553be9" alt="Retail, Fashion and Lifestyle" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover">
+            </div>
+          </div>
+        </article>
+        <article data-card="2" style="position:absolute;left:50%;top:50%;width:min(1180px,94%);height:min(74svh,560px);box-sizing:border-box;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.02fr);gap:clamp(18px,3vw,52px);padding:clamp(22px,2.6vw,44px);border-radius:clamp(14px,1.4vw,22px);background:#0F0D0C;border:1px solid rgba(240,234,221,.1);box-shadow:0 -6px 34px rgba(28,20,14,.2),0 46px 90px rgba(28,20,14,.4);transform:perspective(1500px) translate(-50%,-50%);transform-origin:50% 0%;backface-visibility:hidden;will-change:transform,opacity">
+          <div style="display:flex;flex-direction:column;justify-content:space-between;gap:clamp(14px,2vh,26px);min-width:0">
+            <div style="display:flex;flex-direction:column;gap:clamp(12px,1.8vh,20px)">
+              <div style="display:flex;align-items:center;justify-content:space-between;gap:12px;font-size:10.5px;letter-spacing:.28em;text-transform:uppercase;color:#FFFAF2">
+                <span>Hypermart</span>
+                <span>(03)</span>
+              </div>
+              <h2 style="margin:0;max-width:22ch;font-weight:400;font-size:clamp(25px,2.9vw,44px);line-height:1.06;letter-spacing:-.02em;color:#FFFAF2">An everyday<br><span style="font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:400;font-size:1.06em">anchor for the city.</span></h2>
+              <p style="margin:0;max-width:44ch;font-family:'EB Garamond',serif;font-size:clamp(14.5px,1.05vw,17px);line-height:1.65;color:#FFFAF2">A high-frequency destination designed around daily essential shopping, generating consistent and repeat visitation across the Vantaje ecosystem.</p>
+            </div>
+            <div style="display:flex;flex-wrap:wrap;align-items:center;gap:clamp(10px,1.4vw,18px)">
+              <a href="#x-cta" style="display:inline-flex;align-items:center;gap:10px;padding:13px 20px;border-radius:100px;background:#E8C68A;color:#17120C;font-size:10.5px;letter-spacing:.2em;text-transform:uppercase" style-hover="background:#F4DCAE;color:#17120C">Explore this floor
+                <svg width="15" height="10" sc-camel-view-box="0 0 15 10" fill="none" aria-hidden="true"><path d="M9.4 1 14 5l-4.6 4M14 5H0" stroke="currentColor" stroke-width="1.2" stroke-linecap="square"></path></svg>
+              </a>
+              <div style="display:flex;flex-wrap:wrap;gap:12px;font-size:9.5px;letter-spacing:.22em;text-transform:uppercase;color:#FFFAF2"><span>Daily essentials</span><span>Repeat footfall</span></div>
+            </div>
+          </div>
+          <div style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(8px,.9vw,14px);align-items:stretch;min-width:0">
+            <div style="position:relative;overflow:hidden;border-radius:8px;background:rgba(255,250,242,.12);">
+              <img src="6939532d-8ea3-4ada-abed-6301b5e92a44" alt="Hypermart" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover">
+            </div>
+            <div style="position:relative;overflow:hidden;border-radius:8px;background:rgba(255,250,242,.12);margin-top:clamp(14px,2.4vh,30px);">
+              <img src="06b2f77c-16f9-4c27-862c-6906deaa728d" alt="Hypermart" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover">
+            </div>
+            <div style="position:relative;overflow:hidden;border-radius:8px;background:rgba(255,250,242,.12);margin-top:clamp(28px,4.8vh,60px);">
+              <img src="37e4e831-c6ec-402e-ba2e-fb2234e3ea6e" alt="Hypermart" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover">
+            </div>
+          </div>
+        </article>
+        <article data-card="3" style="position:absolute;left:50%;top:50%;width:min(1180px,94%);height:min(74svh,560px);box-sizing:border-box;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.02fr);gap:clamp(18px,3vw,52px);padding:clamp(22px,2.6vw,44px);border-radius:clamp(14px,1.4vw,22px);background:#151211;border:1px solid rgba(240,234,221,.1);box-shadow:0 -6px 34px rgba(28,20,14,.2),0 46px 90px rgba(28,20,14,.4);transform:perspective(1500px) translate(-50%,-50%);transform-origin:50% 0%;backface-visibility:hidden;will-change:transform,opacity">
+          <div style="display:flex;flex-direction:column;justify-content:space-between;gap:clamp(14px,2vh,26px);min-width:0">
+            <div style="display:flex;flex-direction:column;gap:clamp(12px,1.8vh,20px)">
+              <div style="display:flex;align-items:center;justify-content:space-between;gap:12px;font-size:10.5px;letter-spacing:.28em;text-transform:uppercase;color:#FFFAF2">
+                <span>Culinary &amp; Leisure</span>
+                <span>(04)</span>
+              </div>
+              <h2 style="margin:0;max-width:22ch;font-weight:400;font-size:clamp(25px,2.9vw,44px);line-height:1.06;letter-spacing:-.02em;color:#FFFAF2">A destination for<br><span style="font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:400;font-size:1.06em">every occasion.</span></h2>
+              <p style="margin:0;max-width:44ch;font-family:'EB Garamond',serif;font-size:clamp(14.5px,1.05vw,17px);line-height:1.65;color:#FFFAF2">A thoughtfully curated food and beverage experience bringing together cafés, fine dining, al fresco experiences and vibrant evening destinations.</p>
+            </div>
+            <div style="display:flex;flex-wrap:wrap;align-items:center;gap:clamp(10px,1.4vw,18px)">
+              <a href="#x-cta" style="display:inline-flex;align-items:center;gap:10px;padding:13px 20px;border-radius:100px;background:#E8C68A;color:#17120C;font-size:10.5px;letter-spacing:.2em;text-transform:uppercase" style-hover="background:#F4DCAE;color:#17120C">Explore this floor
+                <svg width="15" height="10" sc-camel-view-box="0 0 15 10" fill="none" aria-hidden="true"><path d="M9.4 1 14 5l-4.6 4M14 5H0" stroke="currentColor" stroke-width="1.2" stroke-linecap="square"></path></svg>
+              </a>
+              <div style="display:flex;flex-wrap:wrap;gap:12px;font-size:9.5px;letter-spacing:.22em;text-transform:uppercase;color:#FFFAF2"><span>Cafés &amp; fine dining</span><span>Al fresco terraces</span></div>
+            </div>
+          </div>
+          <div style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(8px,.9vw,14px);align-items:stretch;min-width:0">
+            <div style="position:relative;overflow:hidden;border-radius:8px;background:rgba(255,250,242,.12);">
+              <img src="0d382bbb-2d44-409b-a018-b67e52c51ce9" alt="Culinary and Leisure" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover">
+            </div>
+            <div style="position:relative;overflow:hidden;border-radius:8px;background:rgba(255,250,242,.12);margin-top:clamp(14px,2.4vh,30px);">
+              <img src="ae78f1a5-80de-40c3-800f-c9eb9be949e5" alt="Culinary and Leisure" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover">
+            </div>
+            <div style="position:relative;overflow:hidden;border-radius:8px;background:rgba(255,250,242,.12);margin-top:clamp(28px,4.8vh,60px);">
+              <img src="f1031de7-56fd-4f8d-bd28-f3af191add56" alt="Culinary and Leisure" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover">
+            </div>
+          </div>
+        </article>
+        <article data-card="4" style="position:absolute;left:50%;top:50%;width:min(1180px,94%);height:min(74svh,560px);box-sizing:border-box;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.02fr);gap:clamp(18px,3vw,52px);padding:clamp(22px,2.6vw,44px);border-radius:clamp(14px,1.4vw,22px);background:#0D0B0A;border:1px solid rgba(240,234,221,.1);box-shadow:0 -6px 34px rgba(28,20,14,.2),0 46px 90px rgba(28,20,14,.4);transform:perspective(1500px) translate(-50%,-50%);transform-origin:50% 0%;backface-visibility:hidden;will-change:transform,opacity">
+          <div style="display:flex;flex-direction:column;justify-content:space-between;gap:clamp(14px,2vh,26px);min-width:0">
+            <div style="display:flex;flex-direction:column;gap:clamp(12px,1.8vh,20px)">
+              <div style="display:flex;align-items:center;justify-content:space-between;gap:12px;font-size:10.5px;letter-spacing:.28em;text-transform:uppercase;color:#FFFAF2">
+                <span>Entertainment &amp; Gaming</span>
+                <span>(05)</span>
+              </div>
+              <h2 style="margin:0;max-width:22ch;font-weight:400;font-size:clamp(25px,2.9vw,44px);line-height:1.06;letter-spacing:-.02em;color:#FFFAF2">Leisure that brings<br><span style="font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:400;font-size:1.06em">people together.</span></h2>
+              <p style="margin:0;max-width:44ch;font-family:'EB Garamond',serif;font-size:clamp(14.5px,1.05vw,17px);line-height:1.65;color:#FFFAF2">Immersive, multi-generational entertainment designed to anchor weekend activity, social engagement and repeat visitation.</p>
+            </div>
+            <div style="display:flex;flex-wrap:wrap;align-items:center;gap:clamp(10px,1.4vw,18px)">
+              <a href="#x-cta" style="display:inline-flex;align-items:center;gap:10px;padding:13px 20px;border-radius:100px;background:#E8C68A;color:#17120C;font-size:10.5px;letter-spacing:.2em;text-transform:uppercase" style-hover="background:#F4DCAE;color:#17120C">Explore this floor
+                <svg width="15" height="10" sc-camel-view-box="0 0 15 10" fill="none" aria-hidden="true"><path d="M9.4 1 14 5l-4.6 4M14 5H0" stroke="currentColor" stroke-width="1.2" stroke-linecap="square"></path></svg>
+              </a>
+              <div style="display:flex;flex-wrap:wrap;gap:12px;font-size:9.5px;letter-spacing:.22em;text-transform:uppercase;color:#FFFAF2"><span>Weekend anchor</span><span>Multi-generational</span></div>
+            </div>
+          </div>
+          <div style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(8px,.9vw,14px);align-items:stretch;min-width:0">
+            <div style="position:relative;overflow:hidden;border-radius:8px;background:rgba(255,250,242,.12);">
+              <img src="bdee4871-a7a7-41d5-8061-87eb8296d8be" alt="Entertainment and Gaming" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover">
+            </div>
+            <div style="position:relative;overflow:hidden;border-radius:8px;background:rgba(255,250,242,.12);margin-top:clamp(14px,2.4vh,30px);">
+              <img src="0ba7ab90-fa55-421a-bca6-cc54ccd7f84a" alt="Entertainment and Gaming" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover">
+            </div>
+            <div style="position:relative;overflow:hidden;border-radius:8px;background:rgba(255,250,242,.12);margin-top:clamp(28px,4.8vh,60px);">
+              <img src="50b4e287-b581-4cbb-802e-71e436844569" alt="Entertainment and Gaming" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover">
+            </div>
+          </div>
+        </article>
+        <article data-card="5" style="position:absolute;left:50%;top:50%;width:min(1180px,94%);height:min(74svh,560px);box-sizing:border-box;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.02fr);gap:clamp(18px,3vw,52px);padding:clamp(22px,2.6vw,44px);border-radius:clamp(14px,1.4vw,22px);background:#131010;border:1px solid rgba(240,234,221,.1);box-shadow:0 -6px 34px rgba(28,20,14,.2),0 46px 90px rgba(28,20,14,.4);transform:perspective(1500px) translate(-50%,-50%);transform-origin:50% 0%;backface-visibility:hidden;will-change:transform,opacity">
+          <div style="display:flex;flex-direction:column;justify-content:space-between;gap:clamp(14px,2vh,26px);min-width:0">
+            <div style="display:flex;flex-direction:column;gap:clamp(12px,1.8vh,20px)">
+              <div style="display:flex;align-items:center;justify-content:space-between;gap:12px;font-size:10.5px;letter-spacing:.28em;text-transform:uppercase;color:#FFFAF2">
+                <span>Kids Play Area</span>
+                <span>(06)</span>
+              </div>
+              <h2 style="margin:0;max-width:22ch;font-weight:400;font-size:clamp(25px,2.9vw,44px);line-height:1.06;letter-spacing:-.02em;color:#FFFAF2">Created for<br><span style="font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:400;font-size:1.06em">families.</span></h2>
+              <p style="margin:0;max-width:44ch;font-family:'EB Garamond',serif;font-size:clamp(14.5px,1.05vw,17px);line-height:1.65;color:#FFFAF2">A safe and engaging environment for children, designed to make family visits more comfortable, enjoyable and unhurried.</p>
+            </div>
+            <div style="display:flex;flex-wrap:wrap;align-items:center;gap:clamp(10px,1.4vw,18px)">
+              <a href="#x-cta" style="display:inline-flex;align-items:center;gap:10px;padding:13px 20px;border-radius:100px;background:#E8C68A;color:#17120C;font-size:10.5px;letter-spacing:.2em;text-transform:uppercase" style-hover="background:#F4DCAE;color:#17120C">Explore this floor
+                <svg width="15" height="10" sc-camel-view-box="0 0 15 10" fill="none" aria-hidden="true"><path d="M9.4 1 14 5l-4.6 4M14 5H0" stroke="currentColor" stroke-width="1.2" stroke-linecap="square"></path></svg>
+              </a>
+              <div style="display:flex;flex-wrap:wrap;gap:12px;font-size:9.5px;letter-spacing:.22em;text-transform:uppercase;color:#FFFAF2"><span>Supervised play</span><span>Family comfort</span></div>
+            </div>
+          </div>
+          <div style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(8px,.9vw,14px);align-items:stretch;min-width:0">
+            <div style="position:relative;overflow:hidden;border-radius:8px;background:rgba(255,250,242,.12);">
+              <img src="50fa1bb8-c48d-4bd8-8372-a4ecec1faf46" alt="Kids Play Area" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover">
+            </div>
+            <div style="position:relative;overflow:hidden;border-radius:8px;background:rgba(255,250,242,.12);margin-top:clamp(14px,2.4vh,30px);">
+              <img src="172a06ef-8449-4252-a2ee-8e0fd1a22f48" alt="Kids Play Area" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover">
+            </div>
+            <div style="position:relative;overflow:hidden;border-radius:8px;background:rgba(255,250,242,.12);margin-top:clamp(28px,4.8vh,60px);">
+              <img src="0ce7bc5d-5f26-4a38-9f4d-a830e3570349" alt="Kids Play Area" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover">
+            </div>
+          </div>
+        </article>
+        <article data-card="6" style="position:absolute;left:50%;top:50%;width:min(1180px,94%);height:min(74svh,560px);box-sizing:border-box;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.02fr);gap:clamp(18px,3vw,52px);padding:clamp(22px,2.6vw,44px);border-radius:clamp(14px,1.4vw,22px);background:#0F0D0C;border:1px solid rgba(240,234,221,.1);box-shadow:0 -6px 34px rgba(28,20,14,.2),0 46px 90px rgba(28,20,14,.4);transform:perspective(1500px) translate(-50%,-50%);transform-origin:50% 0%;backface-visibility:hidden;will-change:transform,opacity">
+          <div style="display:flex;flex-direction:column;justify-content:space-between;gap:clamp(14px,2vh,26px);min-width:0">
+            <div style="display:flex;flex-direction:column;gap:clamp(12px,1.8vh,20px)">
+              <div style="display:flex;align-items:center;justify-content:space-between;gap:12px;font-size:10.5px;letter-spacing:.28em;text-transform:uppercase;color:#FFFAF2">
+                <span>Modern Workspaces</span>
+                <span>(07)</span>
+              </div>
+              <h2 style="margin:0;max-width:22ch;font-weight:400;font-size:clamp(25px,2.9vw,44px);line-height:1.06;letter-spacing:-.02em;color:#FFFAF2">Business at the<br><span style="font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:400;font-size:1.06em">centre of everything.</span></h2>
+              <p style="margin:0;max-width:44ch;font-family:'EB Garamond',serif;font-size:clamp(14.5px,1.05vw,17px);line-height:1.65;color:#FFFAF2">Contemporary workspace environments designed to support modern businesses while creating a captive day-long audience for retail, dining and convenience.</p>
+            </div>
+            <div style="display:flex;flex-wrap:wrap;align-items:center;gap:clamp(10px,1.4vw,18px)">
+              <a href="#x-cta" style="display:inline-flex;align-items:center;gap:10px;padding:13px 20px;border-radius:100px;background:#E8C68A;color:#17120C;font-size:10.5px;letter-spacing:.2em;text-transform:uppercase" style-hover="background:#F4DCAE;color:#17120C">Explore this floor
+                <svg width="15" height="10" sc-camel-view-box="0 0 15 10" fill="none" aria-hidden="true"><path d="M9.4 1 14 5l-4.6 4M14 5H0" stroke="currentColor" stroke-width="1.2" stroke-linecap="square"></path></svg>
+              </a>
+              <div style="display:flex;flex-wrap:wrap;gap:12px;font-size:9.5px;letter-spacing:.22em;text-transform:uppercase;color:#FFFAF2"><span>Day-long audience</span><span>Contemporary floors</span></div>
+            </div>
+          </div>
+          <div style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(8px,.9vw,14px);align-items:stretch;min-width:0">
+            <div style="position:relative;overflow:hidden;border-radius:8px;background:rgba(255,250,242,.12);">
+              <img src="89944363-dab1-47b1-bf20-d2e333b5ee20" alt="Modern Workspaces" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover">
+            </div>
+            <div style="position:relative;overflow:hidden;border-radius:8px;background:rgba(255,250,242,.12);margin-top:clamp(14px,2.4vh,30px);">
+              <img src="8bc987cf-28fa-4d2f-b842-65b4b3ed6ea9" alt="Modern Workspaces" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover">
+            </div>
+            <div style="position:relative;overflow:hidden;border-radius:8px;background:rgba(255,250,242,.12);margin-top:clamp(28px,4.8vh,60px);">
+              <img src="03750137-ad50-4dc3-8cbd-b68b208d804c" alt="Modern Workspaces" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover">
+            </div>
+          </div>
+        </article>
+        </div>
+      </div>
+
+      <div style="position:relative;z-index:4;display:flex;align-items:center;justify-content:space-between;gap:18px;padding-top:clamp(10px,1.6vh,18px);border-top:1px solid rgba(34,27,21,.12);background:#EFE8DB">
+        <div style="display:flex;align-items:center;gap:clamp(9px,1vw,13px)">
+          <button data-chap-prev="" type="button" aria-label="Previous floor" style="display:flex;align-items:center;justify-content:center;width:46px;height:46px;border-radius:100px;background:#FBF8F1;border:1px solid rgba(34,27,21,.16);color:#221B15;cursor:pointer;box-shadow:0 8px 20px rgba(34,27,21,.1);transition:border-color .4s ease,color .4s ease,background .4s ease" style-hover="border-color:#7A5620;color:#7A5620;background:#FFFDF8">
+            <svg width="12" height="17" sc-camel-view-box="0 0 12 17" fill="none" aria-hidden="true"><path d="M1 6.2 6 1l5 5.2M6 1v15.5" stroke="currentColor" stroke-width="1.1" stroke-linecap="square"></path></svg>
+          </button>
+          <button data-chap-next="" type="button" aria-label="Next floor" style="display:flex;align-items:center;justify-content:center;width:46px;height:46px;border-radius:100px;background:#FBF8F1;border:1px solid rgba(34,27,21,.16);color:#221B15;cursor:pointer;box-shadow:0 8px 20px rgba(34,27,21,.1);transition:border-color .4s ease,color .4s ease,background .4s ease" style-hover="border-color:#7A5620;color:#7A5620;background:#FFFDF8">
+            <svg width="12" height="17" sc-camel-view-box="0 0 12 17" fill="none" aria-hidden="true"><path d="M11 10.8 6 16l-5-5.2M6 16V.5" stroke="currentColor" stroke-width="1.1" stroke-linecap="square"></path></svg>
+          </button>
+          <span data-chap-label="" style="margin-left:6px;font-size:10.5px;letter-spacing:.26em;text-transform:uppercase;color:rgba(34,27,21,.78)">High Street Retail</span>
+        </div>
+        <div style="display:flex;align-items:center;gap:10px">
+          <span data-chap-pct="" style="font-size:10.5px;letter-spacing:.24em;color:rgba(34,27,21,.78)">0%</span>
+          <svg width="34" height="34" sc-camel-view-box="0 0 34 34" aria-hidden="true" style="transform:rotate(-90deg)">
+            <circle cx="17" cy="17" r="15" fill="none" stroke="rgba(34,27,21,.16)" stroke-width="1.2"></circle>
+            <circle data-chap-ring="" cx="17" cy="17" r="15" fill="none" stroke="#7A5620" stroke-width="1.2" stroke-dasharray="94.25" stroke-dashoffset="94.25"></circle>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="x-gallery" data-screen-label="03 Spaces Marquee" style="position:relative;box-sizing:border-box;min-height:100svh;display:flex;align-items:center;overflow:hidden;padding:clamp(60px,10vh,120px) 0;background:#0B0A09">
+    <div data-marquee-track="" style="display:flex;width:max-content;gap:clamp(10px,1.4vw,20px);animation:vMarquee 46s linear infinite">
+      <div data-marquee-set="" style="display:flex;gap:clamp(10px,1.4vw,20px);padding-right:clamp(10px,1.4vw,20px)">
+        <div style="flex:0 0 auto;width:clamp(180px,17vw,260px);height:clamp(300px,52vh,480px);overflow:hidden;background:#121010"><img src="a84ed94b-00e0-4d96-93ce-c6eed7bd5c2f" alt="Store interior" style="width:100%;height:100%;object-fit:cover"></div>
+        <div style="flex:0 0 auto;width:clamp(180px,17vw,260px);height:clamp(300px,52vh,480px);margin-top:clamp(20px,4vh,48px);overflow:hidden;background:#121010"><img src="38065ea6-9d35-468d-92b1-f9f66e730211" alt="Restaurant" style="width:100%;height:100%;object-fit:cover"></div>
+        <div style="flex:0 0 auto;width:clamp(180px,17vw,260px);height:clamp(300px,52vh,480px);overflow:hidden;background:#121010"><img src="c5359366-9bd4-4087-83b6-4829ead4023f" alt="Rooftop dining" style="width:100%;height:100%;object-fit:cover"></div>
+        <div style="flex:0 0 auto;width:clamp(180px,17vw,260px);height:clamp(300px,52vh,480px);margin-top:clamp(20px,4vh,48px);overflow:hidden;background:#121010"><img src="5f934063-2b30-4e0a-bdef-0224f9000f19" alt="Gaming lounge" style="width:100%;height:100%;object-fit:cover"></div>
+        <div style="flex:0 0 auto;width:clamp(180px,17vw,260px);height:clamp(300px,52vh,480px);overflow:hidden;background:#121010"><img src="2e6dab52-77f1-4a7e-a155-e874bf2aaf37" alt="Kids play area" style="width:100%;height:100%;object-fit:cover"></div>
+        <div style="flex:0 0 auto;width:clamp(180px,17vw,260px);height:clamp(300px,52vh,480px);margin-top:clamp(20px,4vh,48px);overflow:hidden;background:#121010"><img src="5a18f6ce-f463-4353-8f09-20dae67a156c" alt="Atrium" style="width:100%;height:100%;object-fit:cover"></div>
+        <div style="flex:0 0 auto;width:clamp(180px,17vw,260px);height:clamp(300px,52vh,480px);overflow:hidden;background:#121010"><img src="ac5dbd6b-227d-401e-8998-30f8c235c2f8" alt="Workspace floor" style="width:100%;height:100%;object-fit:cover"></div>
+      </div>
+      <div data-marquee-set="" aria-hidden="true" style="display:flex;gap:clamp(10px,1.4vw,20px);padding-right:clamp(10px,1.4vw,20px)">
+        <div style="flex:0 0 auto;width:clamp(180px,17vw,260px);height:clamp(300px,52vh,480px);overflow:hidden;background:#121010"><img src="a84ed94b-00e0-4d96-93ce-c6eed7bd5c2f" alt="" style="width:100%;height:100%;object-fit:cover"></div>
+        <div style="flex:0 0 auto;width:clamp(180px,17vw,260px);height:clamp(300px,52vh,480px);margin-top:clamp(20px,4vh,48px);overflow:hidden;background:#121010"><img src="38065ea6-9d35-468d-92b1-f9f66e730211" alt="" style="width:100%;height:100%;object-fit:cover"></div>
+        <div style="flex:0 0 auto;width:clamp(180px,17vw,260px);height:clamp(300px,52vh,480px);overflow:hidden;background:#121010"><img src="c5359366-9bd4-4087-83b6-4829ead4023f" alt="" style="width:100%;height:100%;object-fit:cover"></div>
+        <div style="flex:0 0 auto;width:clamp(180px,17vw,260px);height:clamp(300px,52vh,480px);margin-top:clamp(20px,4vh,48px);overflow:hidden;background:#121010"><img src="5f934063-2b30-4e0a-bdef-0224f9000f19" alt="" style="width:100%;height:100%;object-fit:cover"></div>
+        <div style="flex:0 0 auto;width:clamp(180px,17vw,260px);height:clamp(300px,52vh,480px);overflow:hidden;background:#121010"><img src="2e6dab52-77f1-4a7e-a155-e874bf2aaf37" alt="" style="width:100%;height:100%;object-fit:cover"></div>
+        <div style="flex:0 0 auto;width:clamp(180px,17vw,260px);height:clamp(300px,52vh,480px);margin-top:clamp(20px,4vh,48px);overflow:hidden;background:#121010"><img src="5a18f6ce-f463-4353-8f09-20dae67a156c" alt="" style="width:100%;height:100%;object-fit:cover"></div>
+        <div style="flex:0 0 auto;width:clamp(180px,17vw,260px);height:clamp(300px,52vh,480px);overflow:hidden;background:#121010"><img src="ac5dbd6b-227d-401e-8998-30f8c235c2f8" alt="" style="width:100%;height:100%;object-fit:cover"></div>
+      </div>
+    </div>
+
+    <div style="position:absolute;left:0;right:0;bottom:clamp(60px,11vh,130px);z-index:3;display:flex;align-items:center;justify-content:center;padding:0 clamp(14px,3vw,40px);pointer-events:none">
+      <span style="align-self:stretch;width:clamp(14px,1.6vw,26px);min-height:clamp(52px,7vw,104px);border-left:1px solid rgba(240,234,221,.6);border-top:1px solid rgba(240,234,221,.6);border-bottom:1px solid rgba(240,234,221,.6)"></span>
+      <span style="padding:0 clamp(12px,1.8vw,28px);font-weight:200;font-size:clamp(26px,4.6vw,78px);line-height:1;letter-spacing:.01em;text-transform:uppercase;color:#FBF7EF;white-space:nowrap;text-shadow:0 4px 40px rgba(8,6,5,.85)">Our Spaces</span>
+      <span style="align-self:stretch;width:clamp(14px,1.6vw,26px);min-height:clamp(52px,7vw,104px);border-right:1px solid rgba(240,234,221,.6);border-top:1px solid rgba(240,234,221,.6);border-bottom:1px solid rgba(240,234,221,.6)"></span>
+    </div>
+
+    <div style="position:absolute;right:clamp(16px,3vw,44px);bottom:clamp(60px,11vh,130px);z-index:4;padding:12px 16px;border:1px solid rgba(240,234,221,.3);font-size:9.5px;letter-spacing:.28em;text-transform:uppercase;color:rgba(240,234,221,.62);pointer-events:none">Scroll</div>
+  </section>
+
+  <section id="x-cta" data-screen-label="04 Final CTA" style="position:relative;box-sizing:border-box;min-height:82svh;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:clamp(22px,4vh,40px);padding:clamp(70px,12vh,140px) clamp(16px,3vw,48px) clamp(90px,14vh,150px);overflow:hidden;text-align:center">
+    <div style="position:absolute;inset:0;opacity:.22">
+      <img src="524d57fc-8c95-4db9-998f-a7d4a8c5e9d0" alt="" style="width:100%;height:100%;object-fit:cover">
+      <div style="position:absolute;inset:0;background:linear-gradient(180deg,#0B0A09 0%,rgba(11,10,9,.5) 46%,#0B0A09 100%)"></div>
+    </div>
+    <div data-rise="0" style="position:relative;z-index:2;display:flex;flex-direction:column;align-items:center;gap:clamp(16px,2.6vh,28px)">
+      <span style="font-size:10.5px;letter-spacing:.3em;text-transform:uppercase;color:#E8C68A">Vantaje · Sohna Road</span>
+      <h2 style="margin:0;max-width:22ch;font-weight:300;font-size:clamp(26px,3.4vw,52px);line-height:1.04;letter-spacing:-.02em;text-transform:uppercase;color:#FBF7EF">More to Discover. <span style="font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:400;text-transform:none;color:#E8C68A;font-size:1.1em">More Reasons to Return.</span></h2>
+      <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:12px;margin-top:6px">
+        <a href="#x-cta" style="padding:16px 30px;border-radius:100px;background:#E8C68A;color:#17120C;font-weight:500;font-size:11px;letter-spacing:.18em;text-transform:uppercase" style-hover="background:#F4DCAE">Enquire Now</a>
+        <a href="#x-cta" style="padding:16px 30px;border-radius:100px;border:1px solid rgba(240,234,221,.3);color:#F0EADD;font-size:11px;letter-spacing:.18em;text-transform:uppercase" style-hover="border-color:#F0EADD;background:rgba(240,234,221,.08)">Book a Site Visit</a>
+      </div>
+    </div>
+  </section>
+
+  <section data-screen-label="Footer" style="position:relative;padding:0 0 clamp(10px,2vh,22px);font-family:'Jost',sans-serif">
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:36px 40px;margin-top:clamp(38px,6vh,72px);padding:clamp(34px,5vh,54px) clamp(24px,5.4vw,86px) 0;border-top:1px solid rgba(247,244,237,.14);font-weight:400;text-transform:uppercase">
+      <div style="display:flex;flex-direction:column;gap:16px">
+        <span style="font-family:'Cormorant Garamond',serif;font-size:26px;letter-spacing:.22em;color:#F7F4ED">Vantaje</span>
+        <span style="font-size:13px;line-height:2;letter-spacing:.1em;color:rgba(247,244,237,.55)">Sector 48, Sohna Road<br>Gurugram, Haryana</span>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:14px">
+        <span style="font-size:11px;letter-spacing:.28em;color:rgba(232,198,138,.85)">Explore</span>
+        <a href="Vantaje Homepage.dc.html" style="font-size:14px;letter-spacing:.14em;color:rgba(247,244,237,.72)" style-hover="color:#F7F4ED">Home</a>
+        <a href="Vantaje Experiences v2.dc.html" style="font-size:14px;letter-spacing:.14em;color:rgba(247,244,237,.72)" style-hover="color:#F7F4ED">Experiences</a>
+        <a href="Vantaje Homepage.dc.html#hp-location" style="font-size:14px;letter-spacing:.14em;color:rgba(247,244,237,.72)" style-hover="color:#F7F4ED">Location</a>
+        <a href="Vantaje Project Overview v2.dc.html" style="font-size:14px;letter-spacing:.14em;color:rgba(247,244,237,.72)" style-hover="color:#F7F4ED">Advantage</a>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:14px">
+        <span style="font-size:11px;letter-spacing:.28em;color:rgba(232,198,138,.85)">Enquire</span>
+        <a href="#x-cta" style="font-size:14px;letter-spacing:.14em;color:rgba(247,244,237,.72)" style-hover="color:#F7F4ED">Book a Site Visit</a>
+        <a href="#x-cta" style="font-size:14px;letter-spacing:.14em;color:rgba(247,244,237,.72)" style-hover="color:#F7F4ED">Download Brochure</a>
+        <a href="#x-cta" style="font-size:14px;letter-spacing:.14em;color:rgba(247,244,237,.72)" style-hover="color:#F7F4ED">Request Price Details</a>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:14px">
+        <span style="font-size:11px;letter-spacing:.28em;color:rgba(232,198,138,.85)">Follow</span>
+        <a href="#x-cta" style="font-size:14px;letter-spacing:.14em;color:rgba(247,244,237,.72)" style-hover="color:#F7F4ED">Instagram</a>
+        <a href="#x-cta" style="font-size:14px;letter-spacing:.14em;color:rgba(247,244,237,.72)" style-hover="color:#F7F4ED">LinkedIn</a>
+        <a href="#x-cta" style="font-size:14px;letter-spacing:.14em;color:rgba(247,244,237,.72)" style-hover="color:#F7F4ED">Facebook</a>
+        <a href="#x-cta" style="font-size:14px;letter-spacing:.14em;color:rgba(247,244,237,.72)" style-hover="color:#F7F4ED">WhatsApp</a>
+      </div>
+    </div>
+
+    <div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:end;gap:24px 40px;margin-top:clamp(34px,5vh,58px);padding:20px clamp(24px,5.4vw,86px);border-top:1px solid rgba(247,244,237,.18);font-weight:400;font-size:13px;letter-spacing:.2em;text-transform:uppercase;color:rgba(247,244,237,.7)">
+      <span>Vantaje by Aura — Sector 48, Sohna Road, Gurugram</span>
+      <span>2026</span>
+    </div>
+  </section>
+
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script="" data-props="{&quot;$preview&quot;:{&quot;width&quot;:1440}}">
+class Component extends DCLogic {
+  componentDidMount() {
+    this.active = -1;
+    this.labels = ['High Street Retail','Retail, Fashion & Lifestyle','Hypermart','Culinary & Leisure','Entertainment & Gaming','Kids Play Area','Modern Workspaces'];
+    this.initChapters();
+    this.initReveal();
+    this.initLayout();
+    this.sizePages();
+    this.updateChapters();
+    if (!this._raf) this.loop();
+  }
+
+  componentDidUpdate() { this.initLayout(); if (!this._raf) this.loop(); }
+
+  componentWillUnmount() {
+    if (this._raf) cancelAnimationFrame(this._raf);
+    this._raf = null;
+    if (this._onResize) window.removeEventListener('resize', this._onResize);
+    if (this._ro) this._ro.disconnect();
+    if (this._io) this._io.disconnect();
+    if (this._safety) clearTimeout(this._safety);
+    if (this._introSafety) clearTimeout(this._introSafety);
+    if (this._onScroll) window.removeEventListener('scroll', this._onScroll);
+    if (this._onKey) window.removeEventListener('keydown', this._onKey);
+    if (this._rso) this._rso.disconnect();
+    if (this._tw) cancelAnimationFrame(this._tw);
+    if (this._twCancel) ['wheel', 'touchstart', 'pointerdown'].forEach(ev => window.removeEventListener(ev, this._twCancel));
+  }
+
+  initChapters() {
+    if (this._chapBound) return;
+    this._chapBound = true;
+    this.n = document.querySelectorAll('[data-card]').length || 7;
+    const jump = d => {
+      const wrap = document.querySelector('[data-chap-wrap]');
+      if (!wrap) return;
+      const span = (wrap.offsetHeight - (window.innerHeight || 800)) || 1;
+      const i = Math.max(0, Math.min(this.n - 1, (this.active || 0) + d));
+      this.tweenTo(wrap.offsetTop + span * (i / (this.n - 1)) + 2);
+    };
+    this._onKey = ev => {
+      const wr = document.querySelector('[data-chap-wrap]');
+      if (!wr) return;
+      const r = wr.getBoundingClientRect();
+      if (r.top > 40 || r.bottom < (window.innerHeight || 800) - 40) return;
+      if (ev.key === 'ArrowRight' || ev.key === 'ArrowDown') { ev.preventDefault(); jump(1); }
+      if (ev.key === 'ArrowLeft' || ev.key === 'ArrowUp') { ev.preventDefault(); jump(-1); }
+    };
+    window.addEventListener('keydown', this._onKey);
+    const cp = document.querySelector('[data-chap-prev]');
+    const cn = document.querySelector('[data-chap-next]');
+    if (cp) cp.addEventListener('click', () => jump(-1));
+    if (cn) cn.addEventListener('click', () => jump(1));
+  }
+
+  tweenTo(target) {
+    const el = document.scrollingElement || document.documentElement;
+    const from = el.scrollTop;
+    const max = (el.scrollHeight - (window.innerHeight || 800)) || 1;
+    const to = Math.max(0, Math.min(max, target));
+    if (this._tw) cancelAnimationFrame(this._tw);
+    if (!this._twCancel) {
+      this._twCancel = () => { if (this._tw) cancelAnimationFrame(this._tw); this._tw = null; };
+      ['wheel', 'touchstart', 'pointerdown'].forEach(ev => window.addEventListener(ev, this._twCancel, { passive: true }));
+    }
+    const t0 = (window.performance || Date).now();
+    const dur = 640;
+    const step = () => {
+      const p = Math.min(1, ((window.performance || Date).now() - t0) / dur);
+      const e = p < 0.5 ? 4 * p * p * p : 1 - Math.pow(-2 * p + 2, 3) / 2;
+      el.scrollTop = from + (to - from) * e;
+      this.updateChapters();
+      if (p < 1) this._tw = requestAnimationFrame(step); else this._tw = null;
+    };
+    step();
+  }
+
+  setActive(i) {
+    if (i === this.active) return;
+    this.active = i;
+    const lab = document.querySelector('[data-chap-label]');
+    if (lab) lab.textContent = this.labels[i];
+    const count = document.querySelector('[data-count]');
+    if (count) count.textContent = String(i + 1).padStart(2, '0') + ' / ' + String(this.n).padStart(2, '0');
+  }
+
+  updateChapters() {
+    const wrap = document.querySelector('[data-chap-wrap]');
+    if (!wrap) return;
+    const vh = window.innerHeight || 800;
+    const rr = wrap.getBoundingClientRect();
+    if (rr.bottom < -200 || rr.top > vh + 200) { if (this._chapIdle) return; this._chapIdle = true; } else { this._chapIdle = false; }
+    const y = window.scrollY || document.documentElement.scrollTop || 0;
+    const span = (wrap.offsetHeight - vh) || 1;
+    const raw = Math.max(0, Math.min(1, (y - wrap.offsetTop) / span));
+    const n = this.n || 7;
+    const pos = raw * (n - 1);
+    const active = Math.max(0, Math.min(n - 1, Math.round(pos)));
+
+    document.querySelectorAll('[data-card]').forEach(c => {
+      const i = parseInt(c.dataset.card, 10);
+      const d = i - pos;
+      c.style.zIndex = String(20 + i);
+      if (d > 1) {
+        c.style.opacity = '0';
+        c.style.pointerEvents = 'none';
+        c.style.transform = 'perspective(1500px) translate(-50%,-50%) translateY(112%)';
+        c.style.filter = 'none';
+        return;
+      }
+      if (d > 0) {
+        const e2 = 1 - Math.pow(1 - (1 - d), 2);
+        c.style.opacity = '1';
+        c.style.pointerEvents = (i === active && Math.abs(d) < 0.15) ? 'auto' : 'none';
+        c.style.transform = 'perspective(1500px) translate(-50%,-50%) translateY(' + ((1 - e2) * 112).toFixed(2) + '%)';
+        c.style.filter = 'none';
+        return;
+      }
+      const ad = Math.min(3.2, -d);
+      c.style.opacity = ad > 1.9 ? Math.max(0, 1 - (ad - 1.9) / 0.9).toFixed(3) : '1';
+      c.style.pointerEvents = (i === active && Math.abs(d) < 0.15) ? 'auto' : 'none';
+      c.style.transform = 'perspective(1500px) translate(-50%,-50%) translateY(' + (-Math.min(16, ad * 7)).toFixed(2) + '%) rotateX(' + Math.min(26, ad * 15).toFixed(2) + 'deg) translateZ(' + (-ad * 60).toFixed(1) + 'px) scale(' + (1 - Math.min(0.16, ad * 0.05)).toFixed(3) + ')';
+      c.style.filter = 'brightness(' + Math.max(0.55, 1 - ad * 0.16).toFixed(3) + ')';
+    });
+
+    this.setActive(active);
+
+    const strip = document.querySelector('[data-strip]');
+    if (strip) {
+      const over = rr.top < vh * 0.55 && rr.bottom > vh * 0.45;
+      if (this._stripOver !== over) {
+        this._stripOver = over;
+        strip.style.transition = 'opacity .5s ease';
+        strip.style.opacity = over ? '0' : '1';
+      }
+    }
+    const pct = Math.round(raw * 100);
+    if (this._pct !== pct) {
+      this._pct = pct;
+      const pe = document.querySelector('[data-chap-pct]');
+      if (pe) pe.textContent = pct + '%';
+      const ring = document.querySelector('[data-chap-ring]');
+      if (ring) ring.setAttribute('stroke-dashoffset', (94.25 * (1 - raw)).toFixed(2));
+    }
+  }
+
+  initReveal() {
+    this.rises = Array.from(document.querySelectorAll('[data-rise]'));
+    const reduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (reduced || !window.IntersectionObserver) { this.showAll(); return; }
+    this.rises.forEach(el => {
+      el.style.opacity = '0';
+      el.style.transform = 'translateY(28px)';
+      el.style.transition = 'opacity 1s cubic-bezier(.16,1,.3,1),transform 1.1s cubic-bezier(.16,1,.3,1)';
+    });
+    this._io = new IntersectionObserver(es => {
+      es.forEach(e => { if (e.isIntersecting) { this.show(e.target); this._io.unobserve(e.target); } });
+    }, { rootMargin: '0px 0px -12% 0px', threshold: 0.01 });
+    this.rises.forEach(el => this._io.observe(el));
+    this._safety = setTimeout(() => this.showAll(), 2600);
+  }
+
+  show(el) { if (el.dataset.shown) return; el.dataset.shown = '1'; el.style.opacity = '1'; el.style.transform = 'none'; }
+  showAll() { (this.rises || []).forEach(el => { el.style.transition = 'none'; this.show(el); }); }
+  sweep() {
+    const vh = window.innerHeight || 800;
+    (this.rises || []).forEach(el => {
+      if (el.dataset.shown) return;
+      const r = el.getBoundingClientRect();
+      if (r.top < vh * 0.9 && r.bottom > 0) this.show(el);
+    });
+  }
+
+  initLayout() {
+    if (!this._onResize) {
+      this._onResize = () => this.applyLayout();
+      window.addEventListener('resize', this._onResize);
+      window.addEventListener('load', () => this.refit());
+      const st = document.querySelector('[data-deck-stage]');
+      if (st && window.ResizeObserver) {
+        this._rso = new ResizeObserver(() => this.sizePages());
+        this._rso.observe(st);
+      }
+      if (document.fonts && document.fonts.ready) document.fonts.ready.then(() => requestAnimationFrame(() => this.applyLayout()));
+    }
+    this.applyLayout();
+  }
+
+  applyLayout() {
+    const w = window.innerWidth || 1200;
+    const vh = window.innerHeight || 800;
+    if (this._lastW === w + 'x' + vh) return;
+    this._lastW = w + 'x' + vh;
+    const narrow = w < 900;
+    this.narrow = narrow;
+    const stage = document.querySelector('[data-deck-stage]');
+    if (stage) stage.style.perspective = narrow ? '1200px' : '1900px';
+    document.querySelectorAll('[data-card]').forEach(c => {
+      c.style.gridTemplateColumns = narrow ? 'minmax(0,1fr)' : 'minmax(0,1fr) minmax(0,1.02fr)';
+    });
+    this.sizeCards();
+  }
+
+  refit() {
+    if (this._fitT) clearTimeout(this._fitT);
+    this._fitT = setTimeout(() => { this._lastW = null; this.applyLayout(); this.updateChapters(); }, 60);
+  }
+
+  sizePages() { this.sizeCards(); }
+
+  sizeCards() {
+    const stage = document.querySelector('[data-deck-stage]');
+    if (!stage) return;
+    const sh = stage.clientHeight;
+    if (!sh) return;
+    const hgt = Math.max(220, Math.min(560, sh - 24));
+    document.querySelectorAll('[data-card]').forEach(c => { c.style.height = hgt.toFixed(0) + 'px'; });
+  }
+
+  refs() {
+    if (!this._refs) {
+      this._refs = {
+        wrap: document.querySelector('[data-intro-wrap]'),
+        plate: document.querySelector('[data-plate]'),
+        gap: document.querySelector('[data-gap]'),
+        row: document.querySelector('[data-title-row]'),
+        scrim: document.querySelector('[data-plate-scrim]'),
+        annos: document.querySelector('[data-annos]'),
+        cue: document.querySelector('[data-cue]'),
+        brackets: Array.from(document.querySelectorAll('[data-bracket]')),
+        bar: document.querySelector('[data-progress]')
+      };
+    }
+    return this._refs;
+  }
+
+  updateIntro() {
+    const R = this.refs();
+    const vh = window.innerHeight || 800;
+    const vw = window.innerWidth || 1200;
+    const y = window.scrollY || document.documentElement.scrollTop || 0;
+    if (R.bar) {
+      const max = (document.documentElement.scrollHeight - vh) || 1;
+      R.bar.style.width = (Math.max(0, Math.min(1, y / max)) * 100).toFixed(2) + '%';
+    }
+    const wrap = R.wrap, plate = R.plate, gap = R.gap, row = R.row;
+    if (!wrap || !plate || !gap || !row) return;
+    const span = (wrap.offsetHeight - vh) || 1;
+    const p = Math.max(0, Math.min(1, (y - wrap.offsetTop) / span));
+    if (p >= 1 && this._pDone) return;
+    this._pDone = p >= 1;
+    const e = p < 0.5 ? 4 * p * p * p : 1 - Math.pow(-2 * p + 2, 3) / 2;
+    const gapStart = Math.min(360, vw * 0.3);
+    plate.style.width = (gapStart * 0.94 + (vw - gapStart * 0.94) * e).toFixed(1) + 'px';
+    plate.style.height = (gapStart * 0.47 + (vh - gapStart * 0.47) * e).toFixed(1) + 'px';
+    gap.style.width = (gapStart * (1 - e) + 18 * e).toFixed(1) + 'px';
+    row.style.transform = 'translateY(calc(-50% + ' + (e * vh * 0.3).toFixed(1) + 'px))';
+    if (R.scrim) R.scrim.style.opacity = Math.min(1, e * 1.5).toFixed(2);
+    if (R.annos) {
+      R.annos.style.opacity = p > 0.8 ? '1' : '0';
+      R.annos.style.pointerEvents = p > 0.8 ? 'auto' : 'none';
+    }
+    if (R.cue) R.cue.style.opacity = p > 0.06 ? '0' : '1';
+    const bo = (1 - Math.min(1, e * 1.4)).toFixed(2);
+    R.brackets.forEach(b => { b.style.opacity = bo; });
+  }
+
+  loop() {
+    if (!this._scrollBound) {
+      this._scrollBound = true;
+      this._onScroll = () => { this._frames = (this._frames || 0) + 1; this.updateIntro(); this.updateChapters(); this.sweep(); };
+      window.addEventListener('scroll', this._onScroll, { passive: true });
+      /* fail-safe: if no frame or scroll event has driven the scrub, snap to the open state */
+      this._introSafety = setTimeout(() => {
+        if (!this._frames) { this.updateIntro(); this.updateChapters(); this.sweep(); }
+        this.sizePages();
+      }, 2400);
+    }
+    const step = () => {
+      try {
+        this._frames = (this._frames || 0) + 1;
+        if ((this._tick = (this._tick || 0) + 1) % 8 === 0) this.sweep();
+        this.updateIntro();
+        this.updateChapters();
+      } catch (err) {}
+      this._raf = requestAnimationFrame(step);
+    };
+    step();
+  }
+}
+
+</script>
+
+
+</body></html>
