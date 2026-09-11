@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-type NavKey = "home" | "overview" | "experiences";
+type NavKey = "home" | "overview" | "experiences" | "safety";
 
 const BASE_LINKS: { key: NavKey; href: string; label: string }[] = [
   { key: "home", href: "/", label: "Homepage" },
@@ -47,8 +47,12 @@ export default function Header({
             </a>
           ))}
           <a
-            href="#"
-            className="whitespace-nowrap text-[rgba(240,234,221,0.62)] transition-colors hover:text-[rgb(240,234,221)]"
+            href="/safety-and-security"
+            className={`whitespace-nowrap transition-colors ${
+              active === "safety"
+                ? "text-[rgb(240,234,221)]"
+                : "text-[rgba(240,234,221,0.62)] hover:text-[rgb(240,234,221)]"
+            }`}
           >
             Safety and Security
           </a>
