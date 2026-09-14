@@ -73,17 +73,19 @@ export default function CtaFooter() {
             Experience Vantaje at Sector 48, Sohna Road, Gurugram.
           </p>
           <div className="font-jost flex flex-wrap justify-end gap-2.5 text-center text-[13px] font-medium tracking-[0.14em] uppercase">
-            <a href="#hp-cta" className="bg-[rgb(247,244,237)] px-6 py-[15px] text-[rgb(48,45,42)]">
+            <a href="/contact" className="bg-[rgb(247,244,237)] px-6 py-[15px] text-[rgb(48,45,42)]">
               Book a Site Visit
             </a>
             <a
-              href="#hp-cta"
+              href="/contact"
               className="border border-[rgba(247,244,237,0.5)] px-6 py-[15px] text-[rgb(247,244,237)]"
             >
               Request Price Details
             </a>
             <a
-              href="#hp-cta"
+              href="/images/VANTAJE%20BROCHURE%202_compressed.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
               className="border border-[rgba(247,244,237,0.5)] px-6 py-[15px] text-[rgb(247,244,237)]"
             >
               Download Brochure
@@ -130,8 +132,22 @@ export default function CtaFooter() {
           <span className="text-[11px] tracking-[0.28em] text-[rgba(232,198,138,0.85)]">
             Enquire
           </span>
-          {["Book a Site Visit", "Download Brochure", "Request Price Details"].map((label) => (
-            <a key={label} href="#hp-cta" className="text-sm tracking-[0.14em] text-[rgba(247,244,237,0.72)]">
+          {[
+            { label: "Book a Site Visit", href: "#hp-cta" },
+            {
+              label: "Download Brochure",
+              href: "/images/VANTAJE%20BROCHURE%202_compressed.pdf",
+              external: true,
+            },
+            { label: "Request Price Details", href: "#hp-cta" },
+          ].map(({ label, href, external }) => (
+            <a
+              key={label}
+              href={href}
+              target={external ? "_blank" : undefined}
+              rel={external ? "noopener noreferrer" : undefined}
+              className="text-sm tracking-[0.14em] text-[rgba(247,244,237,0.72)]"
+            >
               {label}
             </a>
           ))}

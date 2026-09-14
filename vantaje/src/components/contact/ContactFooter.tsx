@@ -43,7 +43,12 @@ export default function ContactFooter() {
             <a href="#c-visit" className="text-[rgba(240,234,221,0.68)] transition-colors hover:text-[rgb(240,234,221)]">
               Book a Site Visit
             </a>
-            <a href="#c-info" className="text-[rgba(240,234,221,0.68)] transition-colors hover:text-[rgb(240,234,221)]">
+            <a
+              href="/images/VANTAJE%20BROCHURE%202_compressed.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[rgba(240,234,221,0.68)] transition-colors hover:text-[rgb(240,234,221)]"
+            >
               Download Brochure
             </a>
             <a href="#c-info" className="text-[rgba(240,234,221,0.68)] transition-colors hover:text-[rgb(240,234,221)]">

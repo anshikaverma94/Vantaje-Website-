@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function OverviewCtaFooter() {
   return (
     <section
@@ -22,7 +24,9 @@ export default function OverviewCtaFooter() {
             Request Price Details
           </a>
           <a
-            href="#v-cta"
+            href="/images/VANTAJE%20BROCHURE%202_compressed.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
             className="rounded-full border border-[rgba(240,234,221,0.28)] px-7 py-4 text-[rgb(240,234,221)]"
           >
             Download Brochure
@@ -48,9 +52,9 @@ export default function OverviewCtaFooter() {
           </span>
         </div>
         <div className="font-jost flex flex-wrap gap-5 text-[11.5px] tracking-[0.16em]">
-          <a href="/" className="text-[rgba(240,234,221,0.6)] transition-colors hover:text-[rgb(240,234,221)]">
+          <Link href="/" className="text-[rgba(240,234,221,0.6)] transition-colors hover:text-[rgb(240,234,221)]">
             Home
-          </a>
+          </Link>
           <a href="#v-advantage" className="text-[rgba(240,234,221,0.6)] transition-colors hover:text-[rgb(240,234,221)]">
             Advantage
           </a>

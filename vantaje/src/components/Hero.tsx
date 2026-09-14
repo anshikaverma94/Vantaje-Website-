@@ -16,7 +16,7 @@ export default function Hero() {
         style={{ opacity: mode === "day" ? 1 : 0 }}
       >
         <Image
-          src="/images/hero-day.jpg"
+          src="/images/lightM.png"
           alt="Vantaje — daytime façade"
           fill
           priority
@@ -31,7 +31,7 @@ export default function Hero() {
         style={{ opacity: mode === "night" ? 1 : 0 }}
       >
         <Image
-          src="/images/hero-night.jpg"
+          src="/images/darkM.png"
           alt="Vantaje — façade after dark"
           fill
           quality={90}

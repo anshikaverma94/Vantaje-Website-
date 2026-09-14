@@ -67,7 +67,9 @@ export default function OverviewHero() {
             Read the Overview
           </a>
           <a
-            href="#v-cta"
+            href="/images/VANTAJE%20BROCHURE%202_compressed.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
             className="font-jost rounded-full border border-[rgba(240,234,221,0.28)] px-[26px] py-[15px] text-[11.5px] font-normal tracking-[0.18em] text-[rgb(240,234,221)] uppercase"
           >
             Download Brochure

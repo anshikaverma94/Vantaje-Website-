@@ -1,7 +1,12 @@
 const LINKS = [
-  { number: "01", label: "Download Brochure" },
-  { number: "02", label: "Request Floor Plans / Layouts" },
-  { number: "03", label: "Request Price Details" },
+  {
+    number: "01",
+    label: "Download Brochure",
+    href: "/images/VANTAJE%20BROCHURE%202_compressed.pdf",
+    external: true,
+  },
+  { number: "02", label: "Request Floor Plans / Layouts", href: "#c-form" },
+  { number: "03", label: "Request Price Details", href: "#c-form" },
 ];
 
 export default function ContactInfoLinks() {
@@ -31,7 +36,9 @@ export default function ContactInfoLinks() {
         {LINKS.map((item) => (
           <a
             key={item.number}
-            href="#c-form"
+            href={item.href}
+            target={item.external ? "_blank" : undefined}
+            rel={item.external ? "noopener noreferrer" : undefined}
             className="flex items-center justify-between gap-4 rounded-[14px] border border-[rgba(240,234,221,0.14)] bg-[rgba(255,250,242,0.03)] p-[clamp(18px,2.2vw,26px)] transition-colors hover:border-[rgba(232,198,138,0.4)]"
           >
             <span className="flex flex-col gap-2.5">
