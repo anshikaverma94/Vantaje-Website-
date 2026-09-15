@@ -7,25 +7,25 @@ const ECO = [
   {
     kicker: "01 · Retail",
     text: "High street retail creates visibility.",
-    img: "/images/overview/eco-retail.jpg",
+    img: "/images/overview/ovr-2.jpeg",
     alt: "High street retail",
   },
   {
     kicker: "02 · Offices",
     text: "Offices bring weekday momentum.",
-    img: "/images/overview/eco-offices.jpg",
+    img: "/images/overview/office_view.jpg",
     alt: "Offices",
   },
   {
     kicker: "03 · Dining",
     text: "Dining and entertainment extend activity into the evenings.",
-    img: "/images/overview/eco-dining.jpg",
+    img: "/images/overview/Restaurant.jpg",
     alt: "Dining and entertainment",
   },
   {
     kicker: "04 · Everyday",
     text: "Everyday conveniences create reasons to return.",
-    img: "/images/overview/eco-everyday.jpg",
+    img: "/images/overview/mall.jpg",
     alt: "Everyday conveniences",
   },
 ];
@@ -93,7 +93,8 @@ export default function AboutSection() {
                 src={item.img}
                 alt={item.alt}
                 fill
-                sizes="(max-width: 768px) 100vw, 25vw"
+                sizes="(max-width: 768px) 100vw, 45vw"
+                quality={90}
                 className="object-cover"
                 style={{
                   filter: isOn ? "grayscale(0) brightness(0.92)" : "grayscale(0.35) brightness(0.72)",
