@@ -12,12 +12,12 @@ const ITEMS = [
   {
     title: "Thriving Catchment",
     body: "An affluent audience shaped by surrounding high-density residential sectors and expanding corporate hubs.",
-    img: "/images/overview/adv-2.jpg",
+    img: "/images/overview/ovr-2.jpeg",
   },
-  {
+  { 
     title: "365-Day Footfall Synergy",
     body: "Weekday momentum from professionals, complemented by families and leisure seekers across evenings and weekends.",
-    img: "/images/overview/adv-3.jpg",
+    img: "/images/overview/ovr-3.jpeg",
   },
   {
     title: "Curated Experience",
@@ -27,7 +27,7 @@ const ITEMS = [
   {
     title: "Compelling Investment Upside",
     body: "A diversified commercial mix with strong potential for rental demand, business growth and capital appreciation.",
-    img: "/images/overview/adv-5.jpg",
+    img: "/images/overview/ovr-5.jpeg",
   },
 ];
 

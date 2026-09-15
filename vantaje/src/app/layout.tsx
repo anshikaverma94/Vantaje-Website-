@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { EB_Garamond, Cormorant_Garamond, Jost } from "next/font/google";
 import SmoothScroll from "@/components/SmoothScroll";
+import BackToMainSite from "@/components/BackToMainSite";
 import "./globals.css";
 
 const ebGaramond = EB_Garamond({
@@ -37,6 +38,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       <body className="min-h-full">
         <SmoothScroll />
         {children}
+        <BackToMainSite />
       </body>
     </html>
   );

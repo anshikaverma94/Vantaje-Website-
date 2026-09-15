@@ -3,11 +3,11 @@
 import Image from "next/image";
 import { useEffect, useRef } from "react";
 
-const ANNOTATIONS = [
-  { label: "High street retail", top: "28%", left: "10%", delay: "0s" },
-  { label: "Culinary & leisure", top: "52%", left: "14%", delay: "0.7s" },
-  { label: "Modern workspaces", top: "74%", left: "9%", delay: "1.4s" },
-];
+// const ANNOTATIONS = [
+//   { label: "High street retail", top: "28%", left: "10%", delay: "0s" },
+//   { label: "Culinary & leisure", top: "52%", left: "14%", delay: "0.7s" },
+//   { label: "Modern workspaces", top: "74%", left: "9%", delay: "1.4s" },
+// ];
 
 function easeInOutCubic(p: number) {
   return p < 0.5 ? 4 * p * p * p : 1 - Math.pow(-2 * p + 2, 3) / 2;
@@ -93,7 +93,7 @@ export default function ExperiencesHero() {
         </div>
 
         {/* floating annotations, revealed once the plate has expanded */}
-        <div ref={annosRef} className="pointer-events-none absolute inset-0 z-[3]" style={{ opacity: 0 }}>
+        {/* <div ref={annosRef} className="pointer-events-none absolute inset-0 z-[3]" style={{ opacity: 0 }}>
           {ANNOTATIONS.map((a) => (
             <div
               key={a.label}
@@ -131,7 +131,7 @@ export default function ExperiencesHero() {
               Explore the Experiences →
             </a>
           </div>
-        </div>
+        </div> */}
 
         {/* title split around the growing plate */}
         <div
