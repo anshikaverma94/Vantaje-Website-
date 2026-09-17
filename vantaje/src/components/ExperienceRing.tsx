@@ -12,14 +12,40 @@ const CARDS = [
 ];
 
 const STEP = 360 / CARDS.length;
-const RADIUS = 504;
+
+// Base (desktop) geometry — scaled down on narrower viewports.
+const BASE_RADIUS = 504;
+const BASE_CARD_W = 560;
+const BASE_CARD_H = 297;
+
+function scaleForWidth(w: number) {
+  if (w < 480) return 0.34;
+  if (w < 768) return 0.5;
+  if (w < 1100) return 0.72;
+  return 1;
+}
+
+const MOBILE_BREAKPOINT = 640;
 
 export default function ExperienceRing() {
   const [angle, setAngle] = useState(0);
+  const [scale, setScale] = useState(1);
+  const [isMobile, setIsMobile] = useState(false);
   const rafRef = useRef<number | null>(null);
   const lastRef = useRef<number | null>(null);
 
   useEffect(() => {
+    const onResize = () => {
+      setScale(scaleForWidth(window.innerWidth));
+      setIsMobile(window.innerWidth < MOBILE_BREAKPOINT);
+    };
+    onResize();
+    window.addEventListener("resize", onResize);
+    return () => window.removeEventListener("resize", onResize);
+  }, []);
+
+  useEffect(() => {
+    if (isMobile) return;
     const tick = (t: number) => {
       if (lastRef.current === null) lastRef.current = t;
       const dt = t - lastRef.current;
@@ -31,7 +57,11 @@ export default function ExperienceRing() {
     return () => {
       if (rafRef.current) cancelAnimationFrame(rafRef.current);
     };
-  }, []);
+  }, [isMobile]);
+
+  const radius = BASE_RADIUS * scale;
+  const cardW = BASE_CARD_W * scale;
+  const cardH = BASE_CARD_H * scale;
 
   return (
     <section
@@ -50,46 +80,74 @@ export default function ExperienceRing() {
         </a>
       </div>
 
-      <div
-        className="relative mt-[clamp(46px,7vh,84px)] h-[447px]"
-        style={{ perspective: "3200px", perspectiveOrigin: "50% 50%" }}
-      >
-        <div
-          className="absolute top-[70px] left-1/2 h-0 w-0"
-          style={{
-            transformStyle: "preserve-3d",
-            transform: `rotateY(${-angle}deg)`,
-          }}
-        >
-          {CARDS.map((card, i) => (
+      {isMobile ? (
+        <div className="mt-[clamp(32px,6vh,54px)] grid grid-cols-2 gap-3">
+          {CARDS.map((card) => (
             <article
               key={card.label}
-              className="absolute top-0 -left-[280px] h-[297px] w-[560px]"
-              style={{
-                transformStyle: "flat",
-                backfaceVisibility: "hidden",
-                transform: `rotateY(${i * STEP}deg) translateZ(${RADIUS}px)`,
-              }}
+              className="relative aspect-[4/3] overflow-hidden rounded-[12px] bg-[rgb(253,251,246)] shadow-[0_16px_34px_rgba(0,0,0,0.4)]"
             >
-              <div className="relative h-full w-full overflow-hidden rounded-[14px] bg-[rgb(253,251,246)] shadow-[0_30px_70px_rgba(0,0,0,0.45)]">
-                <Image
-                  src={card.src}
-                  alt={card.alt}
-                  fill
-                  sizes="560px"
-                  className="object-cover"
-                />
-                <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 to-transparent p-5">
-                  <span className="font-jost text-xs font-medium tracking-[0.26em] text-[rgb(232,198,138)] uppercase">
-                    {card.label}
-                  </span>
-                </div>
+              <Image
+                src={card.src}
+                alt={card.alt}
+                fill
+                sizes="50vw"
+                className="object-cover"
+              />
+              <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 to-transparent p-3">
+                <span className="font-jost text-[11px] font-medium tracking-[0.22em] text-[rgb(232,198,138)] uppercase">
+                  {card.label}
+                </span>
               </div>
             </article>
           ))}
         </div>
-        <div className="pointer-events-none absolute bottom-[4%] left-1/2 h-[60px] w-[min(74%,860px)] -translate-x-1/2 bg-[radial-gradient(rgba(0,0,0,0.5),transparent_72%)]" />
-      </div>
+      ) : (
+        <div
+          className="relative mt-[clamp(46px,7vh,84px)]"
+          style={{ height: 447 * scale, perspective: "3200px", perspectiveOrigin: "50% 50%" }}
+        >
+          <div
+            className="absolute left-1/2 h-0 w-0"
+            style={{
+              top: 70 * scale,
+              transformStyle: "preserve-3d",
+              transform: `rotateY(${-angle}deg)`,
+            }}
+          >
+            {CARDS.map((card, i) => (
+              <article
+                key={card.label}
+                className="absolute top-0"
+                style={{
+                  left: -cardW / 2,
+                  height: cardH,
+                  width: cardW,
+                  transformStyle: "flat",
+                  backfaceVisibility: "hidden",
+                  transform: `rotateY(${i * STEP}deg) translateZ(${radius}px)`,
+                }}
+              >
+                <div className="relative h-full w-full overflow-hidden rounded-[14px] bg-[rgb(253,251,246)] shadow-[0_30px_70px_rgba(0,0,0,0.45)]">
+                  <Image
+                    src={card.src}
+                    alt={card.alt}
+                    fill
+                    sizes="560px"
+                    className="object-cover"
+                  />
+                  <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 to-transparent p-5">
+                    <span className="font-jost text-xs font-medium tracking-[0.26em] text-[rgb(232,198,138)] uppercase">
+                      {card.label}
+                    </span>
+                  </div>
+                </div>
+              </article>
+            ))}
+          </div>
+          <div className="pointer-events-none absolute bottom-[4%] left-1/2 h-[60px] w-[min(74%,860px)] -translate-x-1/2 bg-[radial-gradient(rgba(0,0,0,0.5),transparent_72%)]" />
+        </div>
+      )}
     </section>
   );
 }

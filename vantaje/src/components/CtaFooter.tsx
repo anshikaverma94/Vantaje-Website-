@@ -68,11 +68,11 @@ export default function CtaFooter() {
         <h2 className="font-display m-0 max-w-[760px] text-[clamp(34px,4.8vw,76px)] leading-[1.04] font-medium tracking-[0.045em] text-[rgb(253,251,246)] uppercase">
           Discover the Centre of What Comes Next.
         </h2>
-        <div className="flex w-full max-w-[640px] flex-col justify-self-end gap-6">
-          <p className="m-0 text-right text-[17px] leading-[1.85] text-[rgba(247,244,237,0.6)]">
+        <div className="flex w-full max-w-[640px] flex-col justify-self-start gap-6 sm:justify-self-end">
+          <p className="m-0 text-left text-[17px] leading-[1.85] text-[rgba(247,244,237,0.6)] sm:text-right">
             Experience Vantaje at Sector 48, Sohna Road, Gurugram.
           </p>
-          <div className="font-jost flex flex-wrap justify-end gap-2.5 text-center text-[13px] font-medium tracking-[0.14em] uppercase">
+          <div className="font-jost flex flex-wrap justify-start gap-2.5 text-center text-[13px] font-medium tracking-[0.14em] uppercase sm:justify-end">
             <a href="/contact" className="bg-[rgb(247,244,237)] px-6 py-[15px] text-[rgb(48,45,42)]">
               Book a Site Visit
             </a>
@@ -102,8 +102,8 @@ export default function CtaFooter() {
         </div>
       </div>
 
-      <div className="font-jost mt-[clamp(38px,6vh,72px)] grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] gap-x-10 gap-y-9 border-t border-[rgba(247,244,237,0.14)] px-[clamp(24px,5.4vw,86px)] pt-[clamp(34px,5vh,54px)] font-normal uppercase">
-        <div className="flex flex-col gap-4">
+      <div className="font-jost mt-[clamp(38px,6vh,72px)] grid grid-cols-2 gap-x-6 gap-y-9 border-t border-[rgba(247,244,237,0.14)] px-[clamp(24px,5.4vw,86px)] pt-[clamp(34px,5vh,54px)] font-normal uppercase sm:grid-cols-[repeat(auto-fit,minmax(200px,1fr))] sm:gap-x-10">
+        <div className="col-span-2 flex flex-col gap-4 sm:col-span-1">
           <span className="font-display text-[26px] tracking-[0.22em] text-[rgb(247,244,237)]">
             Vantaje
           </span>
@@ -164,7 +164,7 @@ export default function CtaFooter() {
         </div>
       </div>
 
-      <div className="font-jost mt-[clamp(34px,5vh,58px)] flex flex-wrap items-end justify-between gap-6 border-t border-[rgba(247,244,237,0.18)] px-[clamp(24px,5.4vw,86px)] py-5 text-[13px] font-normal tracking-[0.2em] text-[rgba(247,244,237,0.7)] uppercase">
+      <div className="font-jost mt-[clamp(34px,5vh,58px)] flex flex-col items-start gap-2 border-t border-[rgba(247,244,237,0.18)] px-[clamp(24px,5.4vw,86px)] py-5 text-[12px] font-normal tracking-[0.2em] text-[rgba(247,244,237,0.7)] uppercase sm:flex-row sm:flex-wrap sm:items-end sm:justify-between sm:text-[13px]">
         <span>Vantaje by Aura — Sector 48, Sohna Road, Gurugram</span>
         <span>2026</span>
       </div>

@@ -184,24 +184,24 @@ export default function LocationScroll() {
           </span>
         </div>
 
-        <div className="absolute inset-0 flex items-center justify-end px-[clamp(24px,5.4vw,86px)]">
+        <div className="absolute inset-0 flex items-center justify-center px-[clamp(20px,5.4vw,86px)] text-center sm:items-center sm:justify-end sm:text-left">
           <div
-            className="flex max-w-[min(38vw,470px)] flex-col gap-6"
+            className="flex max-w-[min(92vw,470px)] flex-col gap-5 rounded-[18px] bg-[rgba(18,13,9,0.42)] p-[clamp(18px,4vw,0px)] backdrop-blur-[2px] sm:gap-6 sm:rounded-none sm:bg-transparent sm:p-0 sm:backdrop-blur-none md:max-w-[min(38vw,470px)]"
             style={{
               opacity: vals.copyOpacity,
               transform: `translateY(${vals.copyY}px)`,
             }}
           >
-            <h2 className="font-display m-0 text-[clamp(32px,4.2vw,62px)] leading-[1.06] font-medium tracking-[0.05em] text-[rgb(247,244,237)] uppercase">
+            <h2 className="font-display m-0 text-[clamp(28px,4.2vw,62px)] leading-[1.12] font-medium tracking-[0.04em] text-[rgb(247,244,237)] uppercase">
               Positioned at the Heart of Gurugram
             </h2>
-            <div className="h-px w-full bg-[rgba(232,198,138,0.4)]" />
-            <p className="m-0 text-[19px] leading-[1.76] text-[rgba(247,244,237,0.82)]">
+            <div className="mx-auto h-px w-full bg-[rgba(232,198,138,0.4)] sm:mx-0" />
+            <p className="m-0 text-[clamp(15px,1.8vw,19px)] leading-[1.7] text-[rgba(247,244,237,0.82)]">
               Vantaje is located in Sector 48, Sohna Road, along one of
               Gurugram&apos;s fast-growing commercial and residential
               corridors.
             </p>
-            <p className="m-0 text-[19px] leading-[1.76] text-[rgba(247,244,237,0.82)]">
+            <p className="m-0 text-[clamp(14px,1.7vw,19px)] leading-[1.65] text-[rgba(247,244,237,0.7)] sm:text-[19px] sm:leading-[1.76] sm:text-[rgba(247,244,237,0.82)]">
               Surrounded by an affluent residential catchment and a thriving
               corporate community, the address offers strong street presence
               and direct accessibility.
@@ -209,7 +209,7 @@ export default function LocationScroll() {
             <div>
               <a
                 href="#hp-cta"
-                className="font-jost inline-block bg-[rgb(247,244,237)] px-[34px] py-4 text-sm font-medium tracking-[0.22em] text-[rgb(48,45,42)] uppercase"
+                className="font-jost inline-block w-full bg-[rgb(247,244,237)] px-[34px] py-4 text-center text-sm font-medium tracking-[0.22em] text-[rgb(48,45,42)] uppercase sm:w-auto"
               >
                 Discover the Location
               </a>

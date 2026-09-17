@@ -82,11 +82,11 @@ export default function ServicesSection() {
           </span>
         </div>
 
-        <div className="relative h-[560px]">
+        <div className="relative h-auto min-h-[720px] sm:min-h-[620px] md:h-[560px]">
           {SLIDES.map((slide, i) => (
             <div
               key={slide.title}
-              className="absolute inset-0 grid grid-cols-[minmax(0,0.92fr)_minmax(0,1.08fr)] items-center gap-[clamp(18px,3vw,54px)] transition-opacity duration-700"
+              className="absolute inset-0 grid grid-cols-1 items-center gap-[clamp(18px,3vw,54px)] transition-opacity duration-700 md:grid-cols-[minmax(0,0.92fr)_minmax(0,1.08fr)]"
               style={{ opacity: index === i ? 1 : 0, pointerEvents: index === i ? "auto" : "none" }}
             >
               <div className="flex min-w-0 flex-col gap-[clamp(12px,2vh,20px)]">
@@ -103,20 +103,20 @@ export default function ServicesSection() {
                   {slide.body}
                 </p>
               </div>
-              <div className="relative min-w-0" style={{ height: "100%" }}>
+              <div className="relative min-w-0 h-[320px] md:h-full">
                 <div className="absolute top-[6%] right-0 bottom-[6%] w-[76%] overflow-hidden bg-[rgb(19,17,16)]">
-                  <Image src={slide.a} alt={slide.aAlt} fill sizes="40vw" className="object-cover" />
+                  <Image src={slide.a} alt={slide.aAlt} fill sizes="(max-width: 768px) 76vw, 40vw" className="object-cover" />
                 </div>
                 <div className="absolute bottom-[12%] left-0 aspect-[4/3] w-[44%] overflow-hidden rounded-[clamp(12px,1.2vw,18px)] border-[5px] border-[rgb(11,10,9)] bg-[rgb(19,17,16)]">
-                  <Image src={slide.b} alt={slide.bAlt} fill sizes="20vw" className="object-cover" />
+                  <Image src={slide.b} alt={slide.bAlt} fill sizes="(max-width: 768px) 44vw, 20vw" className="object-cover" />
                 </div>
               </div>
             </div>
           ))}
         </div>
 
-        <div className="mt-[clamp(16px,2.6vh,26px)] grid grid-cols-[minmax(0,0.92fr)_minmax(0,1.08fr)] gap-[clamp(18px,3vw,54px)]">
-          <div />
+        <div className="mt-[clamp(16px,2.6vh,26px)] grid grid-cols-1 gap-[clamp(18px,3vw,54px)] md:grid-cols-[minmax(0,0.92fr)_minmax(0,1.08fr)]">
+          <div className="hidden md:block" />
           <div className="flex items-center gap-[clamp(10px,1.2vw,16px)]">
             <button
               type="button"

@@ -52,16 +52,17 @@ export default function AboutSection() {
             </span>
           </h2>
         </div>
-        <div className="flex max-w-[620px] flex-col gap-[22px] justify-self-end">
+        <div className="flex max-w-[860px] flex-col justify-self-end pt-[clamp(6px,1vh,14px)] sm:border-l sm:border-[rgba(232,198,138,0.3)] sm:pl-[clamp(20px,2.4vw,34px)]">
           <p
-            className="m-0 text-[clamp(16px,1.2vw,19px)] leading-[1.6] text-[rgba(240,234,221,0.88)]"
+            className="m-0 text-[clamp(18px,1.5vw,24px)] leading-[1.2] font-normal text-[rgba(240,234,221,0.92)]"
             style={{ fontFamily: "var(--font-eb-garamond), serif" }}
           >
             Vantaje is conceived as an integrated commercial address where
             every element contributes to a larger ecosystem.
           </p>
+          <div className="my-[20px] h-px w-[46px] bg-[rgba(232,198,138,0.45)]" />
           <p
-            className="m-0 text-[15.5px] leading-[1.8] text-[rgba(240,234,221,0.6)]"
+            className="m-0 text-[clamp(15px,1.05vw,17px)] leading-[1.8] whitespace-normal text-[rgba(240,234,221,0.58)] italic lg:whitespace-nowrap"
             style={{ fontFamily: "var(--font-eb-garamond), serif" }}
           >
             Together, they shape a destination designed to remain active
@@ -70,7 +71,7 @@ export default function AboutSection() {
         </div>
       </div>
 
-      <div className="mt-[clamp(34px,6vh,74px)] flex h-[560px] items-stretch gap-[clamp(8px,1vw,14px)] px-[clamp(18px,3vw,48px)]">
+      <div className="mt-[clamp(34px,6vh,74px)] flex h-auto flex-col items-stretch gap-[clamp(8px,1vw,14px)] px-[clamp(18px,3vw,48px)] sm:h-[560px] sm:flex-row">
         {ECO.map((item, i) => {
           const isOn = active === i;
           const flexGrow = active === -1 ? 1 : isOn ? 2.1 : 0.78;
@@ -79,7 +80,7 @@ export default function AboutSection() {
               key={item.kicker}
               onMouseEnter={() => setActive(i)}
               onClick={() => setActive((a) => (a === i ? -1 : i))}
-              className="relative min-w-0 cursor-pointer overflow-hidden border bg-[rgb(19,17,16)] transition-[flex-grow] duration-[900ms] ease-[cubic-bezier(0.16,1,0.3,1)]"
+              className="relative h-[260px] min-w-0 flex-none cursor-pointer overflow-hidden border bg-[rgb(19,17,16)] transition-[flex-grow] duration-[900ms] ease-[cubic-bezier(0.16,1,0.3,1)] sm:h-auto sm:flex-1"
               style={{
                 flexGrow,
                 flexShrink: 1,
