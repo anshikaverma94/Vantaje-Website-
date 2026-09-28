@@ -7,7 +7,7 @@ const LINKS = [
   },
   { number: "02", label: "Request Floor Plans / Layouts", href: "#c-form" },
   { number: "03", label: "Request Price Details", href: "#c-form" },
-];
+];   
 
 export default function ContactInfoLinks() {
   return (

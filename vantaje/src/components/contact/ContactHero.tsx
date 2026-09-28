@@ -8,7 +8,7 @@ export default function ContactHero() {
     >
       <div className="absolute inset-0">
         <Image
-          src="/images/contact/hero-dusk.jpg"
+          src="/images/contact/hero-dusk.png"
           alt="Vantaje at dusk"
           fill
           priority

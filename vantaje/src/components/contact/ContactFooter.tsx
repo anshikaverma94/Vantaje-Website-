@@ -2,8 +2,8 @@ import Link from "next/link";
 
 export default function ContactFooter() {
   return (
-    <footer className="relative border-t border-[rgba(240,234,221,0.12)] px-[clamp(18px,3vw,48px)] pt-[clamp(34px,6vh,60px)] pb-[clamp(26px,4vh,44px)]">
-      <div className="grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] gap-[clamp(24px,4vw,48px)]">
+    <footer className="relative border-t border-[rgba(240,234,221,0.12)] px-[clamp(18px,3vw,48px)] pt-7 pb-5 sm:pt-[clamp(34px,6vh,60px)] sm:pb-[clamp(26px,4vh,44px)]">
+      <div className="grid grid-cols-2 gap-x-6 gap-y-6 sm:grid-cols-[repeat(auto-fit,minmax(200px,1fr))] sm:gap-[clamp(24px,4vw,48px)]">
         <div className="flex flex-col gap-3">
           <span className="font-display text-[26px] tracking-[0.22em] text-[rgb(240,234,221)]">
             Vantaje

@@ -8,7 +8,7 @@ export default function ContactVisitBanner() {
     >
       <div className="absolute inset-0">
         <Image
-          src="/images/contact/site-visit.jpg"
+          src="/images/contact/site-visit.png"
           alt="Vantaje site at Sector 48, Sohna Road"
           fill
           sizes="100vw"
